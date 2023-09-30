@@ -1,0 +1,154 @@
+.register-background{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 120vh;
+}
+
+.container{
+    width: 32vw;
+    background-color: aliceblue;
+    padding: 2vw;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .3s;
+}
+
+.container:hover{
+    cursor: pointer;
+}
+
+.title{
+    font-family: 'Libre Baskerville', serif;
+    color: #5228F5;
+}
+
+.container>h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    transition: transform .8s;
+    color: rgb(78, 77, 77);
+}
+
+.container>h1:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    font-weight: 600;
+    color: black;
+}
+
+.register-login {
+    font-family: monospace;
+    border: 0.2vh solid grey;
+    border-radius: 0.8vw;
+    margin-bottom: 3vh;
+    font-size: 1.2vw;
+    width: 50vw;
+    color: grey;
+    font-weight: 700;
+    padding: 0.6vw;
+}
+
+.register-login :focus{
+    border:2px solid #5228F5;
+    border-radius: 1vw;
+}
+
+.input1{
+    width: 13vw;
+    margin: 1vw 1vw;
+    margin-right: 1.6vw;
+}
+.input2{
+    width: 13vw;
+}
+.input5{
+    width: 13vw;
+
+}
+
+.input3{
+    width: 29vw;
+    display: block;
+    margin-left: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.input4{
+    width: 13vw;
+    margin: 0vw 1vw;
+    margin-right: 1.6vw;
+}
+
+
+.container>.para{
+    font-family: monospace;
+    margin: 0;
+    margin-left: 7.8vw;
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+
+.para> .reg{
+    color: #44ac9e;
+    font-weight: 900;
+    font-size: 1.3vw;
+}
+.para> .reg:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+.register-button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #25bfab;
+    border: 0.8vw solid transparent;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2vw;
+    width: 30vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 3.5vw;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 200;
+    margin-left: 0.9vw;
+}
+
+.register-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.register-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.register-button:hover span {
+    padding-right: 25px;
+}
+
+.register-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.container>.error{
+    font-family: monospace;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.7vw;
+    color: red;
+}
