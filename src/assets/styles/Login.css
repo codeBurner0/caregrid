@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.login-container {
+    background-color: rgba(128, 128, 128, 0.178);
+    width: 100vw;
+    min-height: 100vh;
+    font-family: monospace;
+
+}
+
+.login-pg {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-pg-pt1 {
+    background: #25bfab;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.319);
+    width: 30vw;
+    height: 39vw;
+    border-radius: 3vw 0vw 0vw 3vw;
+
+}
+
+.login-pg-pt2 {
+    background: white;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.31);
+    width: 60vw;
+    height: 39vw;
+    border-radius: 0vw 3vw 3vw 0vw;
+
+}
+
+.lg-doc-img {
+    position: absolute;
+    left: 16.6vw;
+    bottom: 0;
+    width: 24vw;
+    filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
+    transition: transform .6s;
+}
+
+.lg-doc-img:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.float-img1{
+    width: 4vw;
+    position: absolute;
+    top: 9vw;
+    left: 14vw;
+    filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
+}
+.float-img2{
+    width: 4vw;
+    position: absolute;
+    top: 2vw;
+    left: 28vw;
+    filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
+}
+.float-img3{
+    width: 4vw;
+    position: absolute;
+    top: 12vw;
+    left: 40vw;
+    filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
+}
+.float-img{
+    transition: transform .6s;
+}
+
+.float-img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.lg-fields {
+    position: relative;
+    left: 18vw;
+    top: 5vw;
+    width: 36vw;
+    height: 40vw;
+
+}
+
+.lg-fields>h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    transition: transform .6s;
+    color: rgb(78, 77, 77);
+}
+
+.lg-fields>h1:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    font-weight: 600;
+    color: black;
+}
+.lg-input {
+    display: block;
+    border: 0.2vh solid grey;
+    border-radius: 0.8vw;
+    margin-bottom: 3vh;
+    font-size: 1.4vw;
+    width: 32vw;
+    color: grey;
+    font-weight: 700;
+    padding: 0.8vw;
+    padding-left: 3vw;
+}
+
+.lg-input:focus {
+    outline: none;
+    overflow: hidden;
+    border: 2px solid black;
+}
+.lg-input:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.icon-input {
+    position: relative;
+}
+
+.i-icon1 {
+    position: absolute;
+    top: 0.6vw;
+    font-size: 2vw;
+    color: grey;
+    left: 0.7vw;
+}
+
+.lg-password{
+    position: relative;
+}
+.eye-icon {
+    position: absolute;
+    top: 0.6vw;
+    font-size: 2.2vw;
+    color: grey;
+    left: 0.6vw;
+}
+
+
+.sp {
+    display: inline-block;
+    font-size: 1.4vw;
+    font-weight: 600;
+    transition: transform .5s;
+    color: rgb(78, 77, 77);
+}
+.sp:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    font-weight: 700;
+    color: black;
+}
+
+.sp-1 {
+    padding-right: 1.2vw;
+    padding-left: 1.5vw;
+}
+.hov-icon:hover {
+    transform: scale(1.4);
+    color: #25bfab;
+}
+
+.sp-2 {
+    padding-right: 1vw;
+}
+
+.sp-3 {
+    display: inline-block;
+    padding-left: 5vw;
+    font-weight: 900;
+    color: #2aa091;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.4vw;
+    transition: transform .5s;
+}
+
+.sp-3:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.err-field{
+    color: red;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+/* button styling */
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #25bfab;
+    border: 0.8vw solid transparent;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.4vw;
+    width: 35.9vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 3.5vw;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 200;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.signup-rd {
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.signup-p {
+    font-size: 1.4vw;
+    font-weight: 800;
+    color: #2a8b7e;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.signup-p:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+    .login-container {
+        height: 134vh;
+    
+    }
+    .login-pg {
+        display: grid;
+        width: 90vw;
+        grid-template-columns: 1fr;
+        position: static;
+        top: 4vw;
+        left: 0%;
+        transform: translate(25vw, 20vw);
+    }
+
+    .login-pg-pt1 {
+        width: 50vw;
+        height: 30vw;
+        border-radius: 3vw 3vw 0vw 0vw;
+    }
+
+    .login-pg-pt2 {
+        width: 50vw;
+        height: 36vw;
+        border-radius: 0vw 0vw 3vw 3vw;
+    }
+
+    .lg-doc-img {
+        top: -11vw;
+        left: 11vw;
+        width: 29vw;
+    }
+
+    .float-img1{
+        left: 6vw;
+        top: 13vw;
+    }
+    .float-img3{
+        left: 42vw;
+        top: 15vw;
+    }
+    .float-img2{
+        display: none;
+    }
+
+
+    .lg-fields {
+        left: 7vw;
+        top: 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .login-container {
+        height: 100vh;
+    
+    }
+    .i-icon2 {
+        top: 11.4vw;
+    }
+    .sp-3 {
+        top: 15.5vw;
+    }
+}
+
+
