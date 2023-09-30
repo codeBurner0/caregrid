@@ -38,10 +38,10 @@
 
 .lg-doc-img {
     position: absolute;
-    left: 16.6vw;
-    bottom: 0;
-    width: 24vw;
-    filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
+    left: 11.3vw;
+    bottom: -9.5vw;
+    width: 32vw;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.31));
     transition: transform .9s;
 }
 
@@ -51,23 +51,23 @@
 }
 
 .float-img1{
-    width: 4vw;
+    width: 5vw;
     position: absolute;
-    top: 9vw;
-    left: 14vw;
+    top: 11vw;
+    left: 12vw;
     filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
 }
 .float-img2{
-    width: 4vw;
+    width: 5vw;
     position: absolute;
-    top: 2vw;
+    top: 4vw;
     left: 28vw;
     filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
 }
 .float-img3{
-    width: 4vw;
+    width: 5vw;
     position: absolute;
-    top: 12vw;
+    top: 16vw;
     left: 40vw;
     filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
 }
