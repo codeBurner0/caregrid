@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Libre+Baskerville&family=Montserrat&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.sec1{
+    height: 43vw;
+    background:linear-gradient(to right, #f5f8f8 0%, #f5f8f8 64% , #25bfab 64%, #25bfab 100%) ;
+    filter: blur(0.3px);
+    /* float: right; */
+}
+.sec1 .inner .first{
+    width: 50%;
+    padding: 1vw 1vw 1vw 4.5vw;
+    position: absolute;
+    top:10vw
+    /* gap:4vw; */
+}
+.inner h2{
+    font-size: 3.3vw;
+    padding: 3vw 0vw 1.5vw 0vw;
+    word-spacing: 5px;
+    width: 37vw;
+    font-family: Libre Baskerville,serif;
+}
+.inner .first p{
+    padding: 1.5vw 0vw 1.5vw 0vw;
+    word-spacing: 3px;
+    font-size: 1vw;
+    width:33vw;
+
+}
+
+.inner .first button{
+    padding: 1.2vw 2.2vw 1.2vw 2.2vw;
+    border-radius: 13px;
+    margin: 1.5vw;
+    background:  #21a89f;
+    color: white;
+    border-color: #21a89f ;
+    font-size: 1.3vw;
+}
+.sec1 .inner .second{
+    width: 50%;
+    float: right;
+    position: absolute;
+    left: 43vw;
+    top:9.5vw;
+}
+.sec1 .inner .second .doctors {
+    height: 35vw;
+    width: 51.5vw;
+}
+.sec1 .design1 {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 50vw;
+    top:10vw;
+    z-index: 1;
+}
+
+.sec1 .design2 {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 92vw;
+    top:35vw;
+    /* z-index: 1; */
+}
+
+.sec1 .design3 {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 79vw;
+    top:7vw;
+    z-index: 1;
+}
+
+.sec2 {
+    height: 43vw;
+    background: #f9fbfb;
+    filter: blur(0.4px);
+    /* float: right; */
+}
+
+.sec2 h1{
+    font-family: Libre Baskerville,serif;
+    padding: 7vw 5vw 5vw 5vw;
+    width: 50vw;
+    word-spacing: 3px;
+    font-size: 3vw
+    /* background: #0000002e; */
+}
+.sec2 .inner{
+    display: flex;
+    justify-content: center;
+    gap:8vw
+
+}
+.sec2 .inner .card{
+    height: 20vw;
+    width: 22vw;
+    border-radius: 10px;
+    background:  #f1f7f7;
+    box-shadow: 0.2px 0.2px 5px rgba(130, 137, 135, 0.17) ;
+}
+.sec2 .inner .card:hover{
+    height: 21vw;
+    width: 25vw;
+    border-radius: 10px;
+    background:  #f1f7f7;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17) ;
+}
+
+.sec3{
+    height: 43vw;
+    background: #f9fbfb;
+    filter: blur(0.4px);
+}
+
+.sec4{
+    height: 35vw;
+    background: #f9fbfb;
+    filter: blur(0.4px);
+}
+
+.sec5{
+    height: 23vw;
+    background: #25bfab;
+    filter: blur(0.4px);
+}

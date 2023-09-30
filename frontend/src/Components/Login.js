@@ -10,7 +10,7 @@ import DocImg from '../assets/images/DocLoginImg.png'
 import FloatImg1 from '../assets/images/img1.png'
 import FloatImg2 from '../assets/images/img2.png'
 import FloatImg3 from '../assets/images/img3.png'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 function Login() {
     const [hosp, setHosp] = useState(false)
     const [customer, setCustomer] = useState(false)
@@ -97,7 +97,8 @@ function Login() {
                             <span> Login </span>
                         </button>
                         <div className="signup-rd">
-                            <p>Not Registered Yet? <span className='signup-p'>Sign-Up</span></p>
+                            <p>Not Registered Yet? <span className='signup-p' onClick={()=> navigate('/signup')}> Sign-Up
+                            </span></p>
                         </div>
                     </div>
                 </div>

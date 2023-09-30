@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.nb-parent{
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center; 
+    padding:4vw 4vw 3vw 4vw;
+}
+.nb-parent .nb-child{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap:15vw */
+}
+.nb-part1{
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 8vw; */
+}
+
+.nb-parent .nb-part1{
+    font-size: 3.3vw;
+    text-decoration:none ; 
+    color: black;
+}
+.nb-part1 img{
+    height: 40px;
+    width: 50px;
+    margin-top: 0.5vw;
+}
+
+.nb-parent .nb-part2 {
+    font-size: 1.52vw;
+    margin-right: 2.5vw;
+    display: flex;
+    align-content: center; 
+    gap: 4vw;
+    list-style-type: none;
+    /* cursor: pointer; */
+}
+.nb-parent .nb-part2 li:hover {
+    font-size: 1.7vw;
+    /* cursor: pointer; */
+}
+
+.nb-parent .nb-part2 .green-in{
+    color: white;
+    margin-left: 5vw;
+}
+.nb-parent .nb-part2 a{
+    text-decoration:none ; 
+      color:grey;
+}
+
+
+.nb-parent .hamburger-menu{
+    font-size: 4vw;
+    display:none;
+    padding-right: 1.8vw;
+    color: white;
+}
+
+.nb-parent .nb-part21 {
+    width: 24%;
+    background: #f9f5f5d7;
+    border-radius:10px;
+    margin-top: 25.5vw;
+    color: grey;
+    /* top:40vh; */
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+    gap: 3vw;
+    z-index: 99;
+     padding: 2vw 1vw 2vw 1vw;
+
+    list-style-type: none;
+}
+/* .parent .part21 li{
+    padding: 2vw 1vw 2vw 1vw;
+} */
+
+.nb-parent .nb-part21 a{
+    text-decoration:none ; 
+      color:grey;
+}
+
+.nb-parent .nav-btn{
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    border-radius: 8px;
+    border: 2px solid white;
+    font-size: 1.5vw;
+    color: white;
+    /* border: 1px solid white; */
+}
+.nb-parent .nb-nav-btn:hover{
+    background-color: gray;
+}
+
+@media (max-width:625px) {
+    .nb-parent{
+        height: 8vh;
+        padding: 0.5vw 4vw 0vw 4vw;
+    }
+    .nb-parent .nb-child{
+        /* gap:50vw; */
+        margin-right:2vw;
+    }
+    .nb-parent .nb-part1{
+        font-size: 5vw;
+    }
+    .nb-parent .nb-part2 li{
+        display: none;
+    }
+    .nb-parent  .hamburger-menu{
+       display: block;
+    }
+    .nb-parent .nav-btn{
+        font-size: 2.5vw;
+    }
+}

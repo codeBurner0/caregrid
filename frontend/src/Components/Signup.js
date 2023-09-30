@@ -15,12 +15,12 @@ function Signup() {
     const [confirmPassword, setConfirmPassword] = useState("")
     const [err, setErr] = useState("")
     const navigate = useNavigate();
-    useEffect(() => {
-        const auth = localStorage.getItem('user');
-        if (auth) {
-            navigate('/')
-        }
-    }, [navigate])
+    // useEffect(() => {
+    //     const auth = localStorage.getItem('user');
+    //     if (auth) {
+    //         navigate('/')
+    //     }
+    // }, [navigate])
     async function Handle() {
         console.log(firstName, lastName, email, password, confirmPassword)
         let result = await fetch('http://localhost:5000/v1/register', {

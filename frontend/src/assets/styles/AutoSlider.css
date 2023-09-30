@@ -1,0 +1,60 @@
+.AutoSlider {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .as-main{
+    background: #0000002f;
+  }
+  
+  .as-main h1{
+    font-family: Libre Baskerville,serif;
+    padding: 1vw 5vw 1vw 5vw;
+    width: 50vw;
+    word-spacing: 3px;
+    font-size: 3vw
+  }
+  
+  .card-slider {
+    /* display: flex; */
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slider-content{
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+
+  }
+  .slider-content .card {
+    width: 30vw;
+    height: 20vw;
+    margin: .7rem !important ; /* or whatever you want*/
+    flex: 0 0 40%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* transition: transform 0.5s ease-in-out; */
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  /* .card-slider .slider-content{
+    width: 50%;
+  } */
+  
+  /* .card-slider .card {
+    flex: 0 0 33.33%;
+  }
+   */
