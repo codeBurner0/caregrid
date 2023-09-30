@@ -60,7 +60,7 @@
 .float-img2{
     width: 5vw;
     position: absolute;
-    top: 4vw;
+    top: 5vw;
     left: 28vw;
     filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
 }
@@ -288,18 +288,18 @@
     }
 
     .lg-doc-img {
-        top: -11vw;
-        left: 11vw;
-        width: 29vw;
+        top: -23.3vw;
+        left: 7.5vw;
+        width: 36vw;
     }
 
     .float-img1{
-        left: 6vw;
-        top: 13vw;
+        left: 7vw;
+        top: 1vw;
     }
     .float-img3{
         left: 42vw;
-        top: 15vw;
+        top: 5vw;
     }
     .float-img2{
         display: none;
