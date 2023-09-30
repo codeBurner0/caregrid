@@ -6,7 +6,7 @@ import { FaUserTie } from 'react-icons/fa';
 import { FaRegUser } from 'react-icons/fa';
 import { BiUserCircle } from 'react-icons/bi';
 import { PiEyeBold } from 'react-icons/pi';
-import DocImg from '../assets/images/loginDcImg.png'
+import DocImg from '../assets/images/DocLoginImg.png'
 import FloatImg1 from '../assets/images/img1.png'
 import FloatImg2 from '../assets/images/img2.png'
 import FloatImg3 from '../assets/images/img3.png'
