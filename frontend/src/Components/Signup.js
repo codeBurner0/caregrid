@@ -2,6 +2,10 @@
 import React, { useEffect, useState } from 'react'
 import '../assets/styles/Signup.css'
 import { useNavigate } from 'react-router-dom';
+import RegDocImg from '../assets/images/registerImg.png'
+import FloatImg1 from '../assets/images/img1.png'
+import FloatImg2 from '../assets/images/img2.png'
+import FloatImg3 from '../assets/images/img3.png'
 function Signup() {
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
@@ -42,28 +46,38 @@ function Signup() {
         }
     }
     return (
-        <div className='register-background'>
-            <div className="container">
-                <h1 className='title'>Create Account</h1>
-                <input type="text" className="register-login input1" placeholder='Firstname'
-                    onChange={(e) => setFirstName(e.target.value)} required />
-                <input type="text" className="register-login input2" placeholder='Lastname'
-                    onChange={(e) => setLastName(e.target.value)} required />
-                <input type="text" className="register-login input3" placeholder='Email Address'
-                    onChange={(e) => setEmail(e.target.value)} />
-                <input type="text" className="register-login input3" placeholder='Phone Number'
-                    onChange={(e) => setPhone(e.target.value)} />
-                <input type="text" className="register-login input4" placeholder='Password'
-                    onChange={(e) => setPassword(e.target.value)} />
-                <input type="text" className="register-login input5" placeholder='Confirm Password'
-                    onChange={(e) => setConfirmPassword(e.target.value)} />
-                <p className='para'>Already register? <span className='reg' onClick={() => navigate('/login')}>SignIn</span></p>
-                <p className='error'>{(err) ? err : null}</p>
-                <button className="register-button" onClick={() => Handle()}>
-                    <span> Create Account </span>
-                </button>
+            <div className='login-container'>
+                <div className="login-pg">
+                    <div className="login-pg-pt1">
+                        <img src={RegDocImg} alt="" className='rg-doc-img' />
+                        <img src={FloatImg3} alt="" className='rg-float-img1 float-img' />
+                        <img src={FloatImg2} alt="" className='rg-float-img2 float-img' />
+                        <img src={FloatImg1} alt="" className='rg-float-img3 float-img' />
+                    </div>
+                    <div className="rg-pg-pt2">
+                        <div className="container">
+                            <h1 className='title'>Create Account</h1>
+                            <input type="text" className="register-login input1" placeholder='Firstname'
+                                onChange={(e) => setFirstName(e.target.value)} required />
+                            <input type="text" className="register-login input2" placeholder='Lastname'
+                                onChange={(e) => setLastName(e.target.value)} required />
+                            <input type="text" className="register-login input3" placeholder='Email Address'
+                                onChange={(e) => setEmail(e.target.value)} />
+                            <input type="text" className="register-login input3" placeholder='Phone Number'
+                                onChange={(e) => setPhone(e.target.value)} />
+                            <input type="text" className="register-login input4" placeholder='Password'
+                                onChange={(e) => setPassword(e.target.value)} />
+                            <input type="text" className="register-login input5" placeholder='Confirm Password'
+                                onChange={(e) => setConfirmPassword(e.target.value)} />
+                            <p className='para'>Already register? <span className='reg' onClick={() => navigate('/login')}>SignIn</span></p>
+                            <p className='error'>{(err) ? err : null}</p>
+                            <button className="register-button" onClick={() => Handle()}>
+                                <span> Create Account </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     )
 }
 
