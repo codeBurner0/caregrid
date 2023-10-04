@@ -83,7 +83,7 @@
 }
 
 .container {
-    width: 32vw;
+    width: 36vw;
     padding: 2vw;
     position: absolute;
     left: 48vw;
@@ -138,17 +138,17 @@
 }
 
 .input1 {
-    width: 13vw;
+    width: 13.5vw;
     margin: 1vw 1vw;
-    margin-right: 1.6vw;
+    margin-right: 2vw;
 }
 
 .input2 {
-    width: 13vw;
+    width: 13.5vw;
 }
 
 .input5 {
-    width: 13vw;
+    width: 13.5vw;
 
 }
 
@@ -160,9 +160,9 @@
 }
 
 .input4 {
-    width: 13vw;
+    width: 13.5vw;
     margin: 0vw 1vw;
-    margin-right: 1.6vw;
+    margin-right: 2vw;
 }
 
 
@@ -195,14 +195,15 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 1.2vw;
-    width: 30.5vw;
+    width: 29vw;
     transition: all 0.5s;
     cursor: pointer;
     height: 3.5vw;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     font-family: 'Libre Baskerville', serif;
     font-weight: 200;
-    margin-left: 1vw;
+    margin-left: 0.9vw;
+    margin-top: 1vw;
 }
 
 .register-button span {
