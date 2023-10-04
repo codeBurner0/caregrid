@@ -17,7 +17,6 @@ function HomeScreen() {
      <div className='main' >
 
         <div className='sec1'>
-          <NavBar />
           <div className="inner">
             <div className="first">
             <h2>We'll Ensure You Always Get The Best Result</h2>
