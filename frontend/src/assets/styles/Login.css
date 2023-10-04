@@ -82,10 +82,10 @@
 
 .lg-fields {
     position: relative;
-    left: 18vw;
+    left: 21vw;
     top: 5vw;
-    width: 36vw;
-    height: 40vw;
+    width: 32vw;
+    height: 38vw;
 
 }
 
@@ -107,13 +107,15 @@
     display: block;
     border: 0.2vh solid grey;
     border-radius: 0.8vw;
-    margin-bottom: 3vh;
-    font-size: 1.4vw;
+    margin-bottom: 2.5vh;
+    margin-top: 1vw;
+    font-size: 1.2vw;
     width: 32vw;
     color: grey;
-    font-weight: 700;
-    padding: 0.8vw;
-    padding-left: 3vw;
+    font-weight: 600;
+    padding: 0.6vw;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 2.6vw;
 }
 
 .lg-input:focus {
@@ -132,8 +134,8 @@
 
 .i-icon1 {
     position: absolute;
-    top: 0.6vw;
-    font-size: 2vw;
+    top: 1.5vw;
+    font-size: 1.6vw;
     color: grey;
     left: 0.7vw;
 }
@@ -143,16 +145,16 @@
 }
 .eye-icon {
     position: absolute;
-    top: 0.6vw;
-    font-size: 2.2vw;
+    top: 0.48vw;
+    font-size: 1.6vw;
     color: grey;
-    left: 0.6vw;
+    left: 0.7vw;
 }
 
 
 .sp {
     display: inline-block;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: 600;
     transition: transform .5s;
     color: rgb(78, 77, 77);
@@ -166,7 +168,7 @@
 
 .sp-1 {
     padding-right: 1.2vw;
-    padding-left: 1.5vw;
+    padding-left: 1.4vw;
 }
 .hov-icon:hover {
     transform: scale(1.4);
@@ -174,7 +176,7 @@
 }
 
 .sp-2 {
-    padding-right: 1vw;
+    padding-right: 0vw;
 }
 
 .sp-3 {
@@ -183,7 +185,7 @@
     font-weight: 900;
     color: #2aa091;
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     transition: transform .5s;
 }
 
@@ -208,13 +210,15 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 1.4vw;
-    width: 35.9vw;
+    width: 31.6vw;
     transition: all 0.5s;
     cursor: pointer;
     height: 3.5vw;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     font-family: 'Libre Baskerville', serif;
     font-weight: 200;
+    margin: 1vw 0vw;
+    margin-bottom: 0.6vw;
 }
 
 .button span {
