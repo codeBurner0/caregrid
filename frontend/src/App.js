@@ -1,16 +1,17 @@
 import React from 'react'
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import {Routes,Route } from 'react-router-dom';
 
 import Login from './Components/Login'
 import Signup from './Components/Signup'
 import HomeScreen from './Components/HomeScreen';
 import ProfileScreen from './Components/ProfileScreen';
 import AdminScreen from './Components/AdminScreen';
+import NavBar from './Components/NavBar';
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+       <NavBar/>
         <Routes>
               <Route  path ="/" exact element={<HomeScreen />} />
               <Route  path ="/login" exact element= {<Login />} />
@@ -18,7 +19,6 @@ function App() {
               <Route  path ="/profile" element={<ProfileScreen />}/>
               <Route path="/admin" element={<AdminScreen/>}></Route>
         </Routes>
-      </BrowserRouter>
     </div>
   )
 }
