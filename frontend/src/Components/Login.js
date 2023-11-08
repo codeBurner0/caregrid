@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import '../assets/styles/Login.css'
-import { FaHospital } from 'react-icons/fa';
+// import { FaHospital } from 'react-icons/fa';
 import { FaRegHospital } from 'react-icons/fa';
 import { FaUserTie } from 'react-icons/fa';
-import { FaRegUser } from 'react-icons/fa';
+// import { FaRegUser } from 'react-icons/fa';
 import { BiUserCircle } from 'react-icons/bi';
 import { PiEyeBold } from 'react-icons/pi';
 import DocImg from '../assets/images/DocLoginImg.png'
@@ -12,28 +12,37 @@ import FloatImg2 from '../assets/images/img2.png'
 import FloatImg3 from '../assets/images/img3.png'
 import { useNavigate,Link } from 'react-router-dom';
 function Login() {
-    const [hosp, setHosp] = useState(false)
-    const [customer, setCustomer] = useState(false)
+    // const [hosp, setHosp] = useState(false)
+    // const [customer, setCustomer] = useState(false)
     const [hospRegInp, setHospRegInp] = useState(false)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [err, setErr] = useState("")
+    const [type, setType] = useState('password');
     const navigate=useNavigate()
+    const handleToggle = () => {
+        if (type==='password'){
+           setType('text')
+        } else {
+           setType('password')
+        }
+     }
 
     function inputChangerHosp(){
-        setHosp(!hosp);
+        // setHosp(true);
         setHospRegInp(true)
     }
     function inputChangerCust(){
-        setCustomer(!customer);
+        // setCustomer(true);
         setHospRegInp(false)
     }
 
     async function callLoginApi(){
         console.log("object")
+        const pass = password;
         let result=await fetch('http://localhost:5000/v1/login',{
             method:'POST',
-            body:JSON.stringify({email,password}),
+            body:JSON.stringify({email,pass}),
             headers:{
               'Content-Type':'application/json'
             }
@@ -76,19 +85,22 @@ function Login() {
                             <input type="text" name="" id="" placeholder='Email Address' className='lg-input' onChange={(e)=>setEmail(e.target.value)}/>
                         }
                         <span className='lg-password'>
-                            <PiEyeBold className='eye-icon' />
-                            <input type="text" name="" id="" placeholder='Password' className='lg-input' onChange={(e)=>setPassword(e.target.value)}/>
+                            
+                            <PiEyeBold className='eye-icon' onClick={handleToggle}/>
+                            <input className='lg-input' type={type} name="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password"/>
                         </span>
                         <div className="lg-bt-u-h">
                             <span className='sp  sp-1'>
-                                {customer ? <FaUserTie className='hov-icon'
+                                {/* {customer ? <FaUserTie className='hov-icon'
                                     onClick={() => inputChangerCust()} /> :
                                     <FaRegUser className='hov-icon' onClick={
-                                        () => inputChangerCust()} />} User</span>
+                                        () => inputChangerCust()} />}*/}
+                                        <FaUserTie className='hov-icon'
+                                    onClick={() => inputChangerCust()}/> User</span> 
                             <span className='sp  sp-2'>
-                                {hosp ? <FaHospital className='hov-icon'
-                                    onClick={ () =>inputChangerHosp()} /> :
-                                    <FaRegHospital className='hov-icon' onClick={  () =>inputChangerHosp() } />} Hospital</span>
+                                {/* {hosp ? <FaHospital className='hov-icon'
+                                    onClick={ () =>inputChangerHosp()} /> : */}
+                                    <FaRegHospital className='hov-icon' onClick={  () =>inputChangerHosp() } />Hospital</span>
                                     <span className='sp-3'>Forgot Password?</span>
                         </div>
                         
