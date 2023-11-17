@@ -101,7 +101,7 @@ function Login() {
                                 {/* {hosp ? <FaHospital className='hov-icon'
                                     onClick={ () =>inputChangerHosp()} /> : */}
                                     <FaRegHospital className='hov-icon' onClick={  () =>inputChangerHosp() } />Hospital</span>
-                                    <span className='sp-3'>Forgot Password?</span>
+                                    <span className='sp-3' onClick={()=> navigate('/forgotpassword')}>Forgot Password?</span>
                         </div>
                         
                         <p className='err-field'>{err?err:null}</p>

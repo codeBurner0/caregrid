@@ -6,6 +6,7 @@ import Signup from './Components/Signup'
 import HomeScreen from './Components/HomeScreen';
 import ProfileScreen from './Components/ProfileScreen';
 import AdminScreen from './Components/AdminScreen';
+import ForgotPassward from './Components/ForgotPassward';
 import NavBar from './Components/NavBar';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
               <Route  path ="/login" exact element= {<Login />} />
               <Route  path ="/signup" exact element= {<Signup />} />
               <Route  path ="/profile" element={<ProfileScreen />}/>
+              <Route  path ="/forgotpassword" element={<ForgotPassward />}/>
               <Route path="/admin" element={<AdminScreen/>}></Route>
         </Routes>
     </div>
