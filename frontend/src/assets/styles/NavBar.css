@@ -5,6 +5,10 @@
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
+a{
+    color: white;
+}
+
 .nb-parent{
     height: 10vh;
     width: 100%;
@@ -28,7 +32,7 @@
 }
 
 .nb-parent .nb-part1{
-    font-size: 3.3vw;
+    font-size: 3.0vw;
     text-decoration:none ; 
     color: black;
 }
@@ -63,7 +67,7 @@
 
 
 .nb-parent .hamburger-menu{
-    font-size: 4vw;
+    font-size: 7.5vw;
     display:none;
     padding-right: 1.8vw;
     color: white;
@@ -86,9 +90,6 @@
 
     list-style-type: none;
 }
-/* .parent .part21 li{
-    padding: 2vw 1vw 2vw 1vw;
-} */
 
 .nb-parent .nb-part21 a{
     text-decoration:none ; 
@@ -112,12 +113,19 @@
         height: 8vh;
         padding: 0.5vw 4vw 0vw 4vw;
     }
+
+    .nb-parent .nb-part1 .div1{
+        margin-top: 2vw;
+        font-size: 6vw;
+    }
+
     .nb-parent .nb-child{
         /* gap:50vw; */
         margin-right:2vw;
     }
     .nb-parent .nb-part1{
         font-size: 5vw;
+        margin-top: 1vw;
     }
     .nb-parent .nb-part2 li{
         display: none;
