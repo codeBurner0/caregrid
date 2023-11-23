@@ -11,6 +11,7 @@ import FloatImg1 from '../assets/images/img1.png'
 import FloatImg2 from '../assets/images/img2.png'
 import FloatImg3 from '../assets/images/img3.png'
 import { useNavigate,Link } from 'react-router-dom';
+
 function Login() {
     // const [hosp, setHosp] = useState(false)
     // const [customer, setCustomer] = useState(false)

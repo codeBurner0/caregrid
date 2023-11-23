@@ -8,7 +8,7 @@
 .sec1{
     height: 43vw;
     background:linear-gradient(to right, #f5f8f8 0%, #f5f8f8 64% , #25bfab 64%, #25bfab 100%) ;
-    filter: blur(0.3px);
+    /* filter: blur(0.3px); */
     /* float: right; */
 }
 .sec1 .inner .first{
@@ -84,55 +84,153 @@
 }
 
 .sec2 {
-    height: 43vw;
     background: #f9fbfb;
-    filter: blur(0.4px);
-    /* float: right; */
+    padding: 2vw;
 }
 
 .sec2 h1{
     font-family: Libre Baskerville,serif;
-    padding: 7vw 5vw 5vw 5vw;
+    padding: 2vw 5vw 5vw 5vw;
     width: 50vw;
     word-spacing: 3px;
     font-size: 3vw
-    /* background: #0000002e; */
 }
 .sec2 .inner{
-    display: flex;
-    justify-content: center;
-    gap:8vw
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2vw;
 
 }
 .sec2 .inner .card{
-    height: 20vw;
-    width: 22vw;
+    height: 300px;
+    width: 350px;
     border-radius: 10px;
     background:  #f1f7f7;
     box-shadow: 0.2px 0.2px 5px rgba(130, 137, 135, 0.17) ;
 }
 .sec2 .inner .card:hover{
-    height: 21vw;
-    width: 25vw;
+    height: 300px;
+    width: 370px;
     border-radius: 10px;
     background:  #f1f7f7;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17) ;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.17) ;
+    transition: 0.5s;
 }
 
 .sec3{
     height: 43vw;
     background: #f9fbfb;
-    filter: blur(0.4px);
+    /* filter: blur(0.4px); */
+}
+
+.sec3 .sec3-img{
+    width: 39vw;
+    height:33vw ;
+    padding: 2vw;
+}
+
+.sec3 .sec3-img img{
+    width: 100%;
+    height:100%;
+    margin: 3vw;
+}
+
+.sec3 .sec3-img img:hover{
+    width: 100%;
+    height:100%;
+    margin: 3vw;
+    transition: 0.5s;
 }
 
 .sec4{
     height: 35vw;
     background: #f9fbfb;
-    filter: blur(0.4px);
+    /* filter: blur(0.4px); */
 }
 
 .sec5{
     height: 23vw;
     background: #25bfab;
-    filter: blur(0.4px);
+    /* filter: blur(0.4px); */
+}
+
+@media (max-width:550px){
+    .sec1{
+        height: 80vw;
+    }
+
+    .sec1 .inner .first{
+        top:25vw
+    }
+
+    .inner h2{
+        font-size: 5vw;
+        padding: 0vw 0vw 1.5vw 0vw;
+    }
+
+    .inner .first p{
+        font-size: 1.6vw;
+    }
+    
+    .inner .first button{
+        padding: 1.2vw 2.2vw 1.2vw 2.2vw;
+        border-radius: 13px;
+        margin: 0.6vw;
+        background:  #21a89f;
+        color: white;
+        border-color: #21a89f ;
+        font-size: 2.3vw;
+    }
+    .sec1 .inner .second{
+        width: 50%;
+        float: right;
+        position: absolute;
+        left: 43vw;
+        top:9.5vw;
+    }
+
+    .sec1 .inner .second{
+        left:35vw;
+        top:20vw;
+    }
+    .sec1 .inner .second .doctors {
+        height: 62.7vw;
+        width: 65vw;
+    }
+
+    .sec1 .design1 {
+        height: 10vw;
+        width: 10vw;
+        left: 45vw;
+        top:15vw;
+    }
+    
+    .sec1 .design2 {
+        display: none;
+    }
+    
+    .sec1 .design3 {
+        height: 9vw;
+        width: 9vw;
+        left: 78vw;
+        top: 15vw;
+    }
+    .sec2 h1{
+        padding: 2vw 5vw 5vw 5vw;
+        font-size: 6vw;
+        width: 70%;
+    }
+
+    .sec2 .inner .card{
+        height: 45vw;
+        width: 80vw;
+        margin: 2vw 7vw;
+    }
+    .sec2 .inner .card:hover{
+        height: 50vw;
+        width: 85vw;
+        border-radius: 10px;
+        background:  #f1f7f7;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.17) ;
+    }
 }

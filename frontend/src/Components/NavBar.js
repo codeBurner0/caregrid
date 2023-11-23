@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
-import {GiHamburgerMenu} from 'react-icons/gi'
+// import {GiHamburgerMenu} from 'react-icons/gi'
+import { RiMenuFoldLine } from "react-icons/ri";
 import '../assets/styles/NavBar.css'
 import logo from "../assets/images/CareGrid_logo.png"
 
@@ -13,7 +14,7 @@ function NavBar() {
         <div className='nb-child'>
             <a className="nb-part1" href='/home'>
             <img src={logo} alt="" />
-                <div>CareGrid</div>
+                <div className='div1'>CareGrid</div>
             </a>
             <div className={!click ?"nb-part2":"nb-part21"}>
               <li><Link to='/appointment'>Appointment</Link></li>
@@ -28,7 +29,7 @@ function NavBar() {
         </div>
         <div class="hamburger-menu">
                 <a href="#" onClick={()=>{setClick(!click)}}>
-                    <GiHamburgerMenu />
+                   <RiMenuFoldLine />
                 </a>
          </div>
     </nav>

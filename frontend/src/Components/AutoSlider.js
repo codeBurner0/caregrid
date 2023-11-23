@@ -7,7 +7,7 @@ const CardSlider = ({ cards }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       // Calculate the next index, looping back to the beginning if necessary
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+      setCurrentIndex((prevIndex) => (prevIndex +1) % cards.length);
     }, 3000); // Change card every 3 seconds (adjust as needed)
 
     return () => {
@@ -51,14 +51,6 @@ const AutoSlider = () => {
     {
       title: 'Card 4',
       description: 'Description for Card 1',
-    },
-    {
-      title: 'Card 5',
-      description: 'Description for Card 2',
-    },
-    {
-      title: 'Card 6',
-      description: 'Description for Card 3',
     },
   ];
 
