@@ -6,28 +6,32 @@ const CardSlider = ({ cards }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Calculate the next index, looping back to the beginning if necessary
-      setCurrentIndex((prevIndex) => (prevIndex +1) % cards.length);
-    }, 3000); // Change card every 3 seconds (adjust as needed)
+      setCurrentIndex((prevIndex) => ( (prevIndex+1) % cards.length));
+    }, 3000); 
 
     return () => {
-      clearInterval(interval); // Cleanup the interval on unmount
+      clearInterval(interval); 
     };
   }, [cards.length]);
 
+  const sliderContentClass = currentIndex !== 0 ? 'transformed-slider' : '';
+
+
   return (
     <div className="card-slider">
-      <div className="slider-content"
+      <div className='slider-content'
         style={{
           transform: `translateX(-${currentIndex * 40}%)`,
-          transition: 'transform 0.5s ease-in-out',
+          transition: 'transform 1.5s ease-in-out',
         }}
       >
         {cards.map((card, index) => (
-          <div key={index} className="card">
-            <h2>{card.title}</h2>
-            <p>{card.description}</p>
-          </div>
+             <figure class="snip1390">
+                <span style={{display:'flex'}}><img src={card.image} alt="profile-sample3" class="profile" /> <h2>{card.title}</h2></span>       
+                <figcaption>
+                  <blockquote>{card.description}</blockquote>
+                </figcaption>
+             </figure>
         ))}
       </div>
     </div>
@@ -38,26 +42,39 @@ const AutoSlider = () => {
   const cards = [
     {
       title: 'Card 1',
+      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
       description: 'Description for Card 1',
     },
     {
       title: 'Card 2',
+      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
       description: 'Description for Card 2',
     },
     {
       title: 'Card 3',
+      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
       description: 'Description for Card 3',
     },
     {
       title: 'Card 4',
-      description: 'Description for Card 1',
+      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+      description: 'Description for Card 4',
     },
+    {
+      title: 'Card 5',
+      description: 'Description for Card 5',
+      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+    },
+    {
+      title: 'Card 6',
+      description: 'Description for Card 6',
+      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+    }
   ];
 
   return (
 
     <div className='as-main'>
-    <h1>Our Services in the eyes of Patient</h1>
      <div className="AutoSlider">
        <CardSlider cards={cards} />
      </div>

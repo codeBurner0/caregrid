@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import'../assets/styles/HomeScreen.css'
 import NavBar from './NavBar'
 import AutoSlider from './AutoSlider'
+import Footer from './Footer'
 import doctors from "../assets/images/doctor-bg.png"
 import design1 from '../assets/images/design1.png'
 import design2 from '../assets/images/design2.png'
@@ -63,17 +64,49 @@ function HomeScreen() {
 
 
         <div className='sec3'>
+          <div className='inner'>
             <div className="sec3-img">
               <img src={downdoctor} alt="" />
+            </div>
+            <div>
+            <h1>Enjoy The Features <br /> In Our Clinic</h1>
+            <div className="inner2">
+            <div>
+            <img src="https://images.pexels.com/"/>
+            <div className="card">
+              <h2>Doctors</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing el </p>
+            </div>
+            </div>
+            <div>
+            <img src="https://images.pexels.com/"/>
+            <div className="card">
+              <h2>Doctors</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing el </p>
+            </div>
+            </div>
+           
+            <div>
+            <img src="https://images.pexels.com/"/>
+            <div className="card">
+              <h2>Doctors</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing el </p>
+            </div>
+            </div>
+          </div>
+            </div>
+            
             </div>
         </div>
 
         <div className='sec4'>
+            <h1>Our Services in the eyes of Patient</h1>
             <AutoSlider />
         </div>
         
         <div className='sec5'>
             
+            <Footer />
         </div>
      </div>
     </>

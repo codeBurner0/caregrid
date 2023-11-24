@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
 .AutoSlider {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -5,7 +8,7 @@
   }
 
   .as-main{
-    background: #0000002f;
+    /* background: #0000002f; */
   }
   
   .as-main h1{
@@ -19,35 +22,16 @@
   .card-slider {
     /* display: flex; */
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .slider-content{
     display: flex;
     transition: transform 0.2s ease-in-out;
-
   }
-  .slider-content .card {
-    width: 30vw;
-    height: 20vw;
-    margin: .7rem !important ; /* or whatever you want*/
-    flex: 0 0 40%;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* transition: transform 0.5s ease-in-out; */
-  }
-  
-  .card h2 {
-    font-size: 18px;
-    margin: 0;
-  }
-  
-  .card p {
-    font-size: 14px;
-    margin: 10px 0;
+  .transformed-slider {
+    transform: translateX(-40%);
+    transition:transform 1.5s ease-in-out;
   }
 
   /* .card-slider .slider-content{
@@ -58,3 +42,91 @@
     flex: 0 0 33.33%;
   }
    */
+
+   
+figure.snip1390 {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 30px;
+  min-width: 38vw;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(51, 215, 199);
+  padding: 15px;
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* margin: 5vw; */
+}
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1390 figcaption {
+  width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 300;
+}
+figure.snip1390 h2 {
+  color: #ffffff;
+}
+figure.snip1390 h4 {
+  color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+  font-size: 1em;
+  padding: 20px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
+}
+figure.snip1390 blockquote:before {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+figure.snip1390 .profile {
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #A6A57A;
+}
+
+@media(max-width:600px) {
+  figure.snip1390 {
+   /* max-width:100vw ; */
+   min-width:70vw ;
+   width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-content {
+    transform: translateX(-10%);
+  }
+}
