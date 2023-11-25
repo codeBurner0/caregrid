@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import { RiMenuFoldLine } from "react-icons/ri";
 import '../assets/styles/NavBar.css'
 import logo from "../assets/images/CareGrid_logo.png"
+import login from '../assets/images/login.png'
 
 function NavBar() {
 
@@ -19,10 +20,15 @@ function NavBar() {
             <div className={!click ?"nb-part2":"nb-part21"}>
               <li><Link to='/appointment'>Appointment</Link></li>
               <li><Link to='/beds'>Beds</Link></li>
-              <li><Link to='/medicines'>Medicines</Link></li>
-              <li><Link to='/about' className='green-in'>About</Link></li>
-              <li><Link to='/contact' style={{color:'white'}}>Contact</Link></li>
-              <li className='nav-btn'>{isLogin ? <Link to={'/profile'}>Profile</Link>: <Link to={'/login'}>Login</Link>}</li>
+              <li><Link to='/medicines'>Medicines <span>{' '}</span></Link></li>
+              {/* <li><Link to='/about' className='green-in'>About</Link></li> */}
+              <li><Link to='/contact' className='green-in'>Contact</Link></li>
+              <div className='nav-btn'>
+              {isLogin ? 
+                  <Link to={'/profile'}>Profile</Link>:
+                   <Link to={'/login'}><img src={login} alt="" /></Link>}
+                
+              </div>
              
             </div>
             

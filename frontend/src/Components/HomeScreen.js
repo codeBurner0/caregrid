@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import'../assets/styles/HomeScreen.css'
+import { IoIosGlobe } from "react-icons/io";
+
 import NavBar from './NavBar'
 import AutoSlider from './AutoSlider'
 import Footer from './Footer'
@@ -24,12 +26,12 @@ function HomeScreen() {
             <div className="first">
             <h2>We'll Ensure You Always Get The Best Result</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet molestiae quaerat officia nesciunt iure, deleniti facilis, recusandae doloribus dolores voluptate voluptates placeat provident vero molestias quis sequi harum!</p>
-            <button>Patient <span>&#8594;</span></button>
-            <button>Hostipal <span>&#8594;</span></button>
+            <button className='sec1-button'><span>Patient</span></button>
+            <button className='sec1-button'> <span>Hospital</span></button>
 
             </div>
             <img className="design1" src={design1} alt="" />
-            <img className="design2" src={design2} alt="" />
+            {/* <img className="design2" src={design2} alt="" /> */}
             <img className="design3" src={design3} alt="" />
             <div className="second">
               <img className="doctors" src={doctors} alt="" />
@@ -48,7 +50,7 @@ function HomeScreen() {
               <button>Know this more</button>
             </div>
             <div className="card">
-               <img src="https://images.pexels.com/"/>
+              <img src="https://images.pexels.com/"/>
               <h2>Doctors</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing el </p>
               <button>Know this more</button>
@@ -72,25 +74,25 @@ function HomeScreen() {
             <h1>Enjoy The Features <br /> In Our Clinic</h1>
             <div className="inner2">
             <div>
-            <img src="https://images.pexels.com/"/>
+            <IoIosGlobe />
             <div className="card">
-              <h2>Doctors</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing el </p>
+              <h2>Online System</h2>
+              <p>Our website already has a online ecosystem</p>
             </div>
             </div>
             <div>
             <img src="https://images.pexels.com/"/>
             <div className="card">
-              <h2>Doctors</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing el </p>
+              <h2>24 Hours Open</h2>
+              <p>Ready to receive patients 24 hours a day</p>
             </div>
             </div>
            
             <div>
             <img src="https://images.pexels.com/"/>
             <div className="card">
-              <h2>Doctors</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing el </p>
+              <h2>Easy Access</h2>
+              <p>Easy access for allfacilities</p>
             </div>
             </div>
           </div>

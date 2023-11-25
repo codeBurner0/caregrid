@@ -33,7 +33,7 @@
 
 }
 
-.inner .first button{
+/* .inner .first button{
     padding: 1.2vw 2.2vw 1.2vw 2.2vw;
     border-radius: 13px;
     margin: 1.5vw;
@@ -41,7 +41,47 @@
     color: white;
     border-color: #21a89f ;
     font-size: 1.3vw;
-}
+} */
+
+.inner .first .sec1-button {
+    border-radius: 4px;
+    background-color:  #21a89f;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2vw;
+    padding: 15px;
+    width: 13vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px;
+  }
+  
+  .inner .first  .sec1-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .inner .first .sec1-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .inner .first .sec1-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .inner .first .sec1-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 .sec1 .inner .second{
     width: 50%;
     float: right;
@@ -96,6 +136,7 @@
     font-size: 3vw
 }
 .sec2 .inner{
+    margin: 3vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2vw;
@@ -157,7 +198,7 @@
 }
 .sec3 .inner2 .card{
     height: 150px;
-    width: 170px;
+    /* width: 170px; */
     border-radius: 10px;
     background:  #f1f7f7;
     box-shadow: 0.2px 0.2px 5px rgba(130, 137, 135, 0.17) ;
@@ -205,16 +246,22 @@
     .inner .first p{
         font-size: 1.6vw;
     }
-    
-    .inner .first button{
-        padding: 1.2vw 2.2vw 1.2vw 2.2vw;
-        border-radius: 13px;
-        margin: 0.6vw;
-        background:  #21a89f;
-        color: white;
-        border-color: #21a89f ;
-        font-size: 2.3vw;
-    }
+
+    .inner .first .sec1-button {
+        font-size: 2vw;
+        padding: 7px;
+        width: 15vw;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 20px 3px;
+      }
+        
+  .inner .first .sec1-button span:after {
+    left: 10px;
+    right: 0px;
+  }
+      
+
     .sec1 .inner .second{
         width: 50%;
         float: right;
@@ -226,10 +273,12 @@
     .sec1 .inner .second{
         left:35vw;
         top:20vw;
+        /* overflow: hidden; */
     }
     .sec1 .inner .second .doctors {
         height: 62.7vw;
         width: 65vw;
+        overflow: hidden;
     }
 
     .sec1 .design1 {
