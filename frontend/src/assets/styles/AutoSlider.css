@@ -29,9 +29,14 @@
     display: flex;
     transition: transform 0.2s ease-in-out;
   }
+  .slider-content2{
+    display: none;
+    transition: transform 0.2s ease-in-out;
+  }
+
   .transformed-slider {
-    transform: translateX(-40%);
-    transition:transform 1.5s ease-in-out;
+    transform: translateX(-190%);
+    transition: transform 1.5s ease-in-out;
   }
 
   /* .card-slider .slider-content{
@@ -43,7 +48,32 @@
   }
    */
 
-   
+   .sliderbutton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 10px;
+    margin: 1vw;
+  }
+  
+  .sliderbutton :hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04aa9c;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+
 figure.snip1390 {
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
@@ -78,6 +108,10 @@ figure.snip1390 h4,
 figure.snip1390 blockquote {
   margin: 0;
 }
+
+.card-container{
+  margin: 1vw 1vw;
+}
 figure.snip1390 h2,
 figure.snip1390 h4 {
   font-weight: 300;
@@ -91,7 +125,7 @@ figure.snip1390 h4 {
 figure.snip1390 blockquote {
   font-size: 1em;
   padding: 20px 20px 40px 50px;
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
@@ -109,24 +143,31 @@ figure.snip1390 blockquote:before {
   left: 20px;
 }
 figure.snip1390 .profile {
-  width: 100px;
+  width: 65px;
   border-radius: 50%;
   display: inline-block;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
-  margin-bottom: 10px;
-  border: solid 5px #A6A57A;
+  margin: 5px;
+  border: solid 3px #A6A57A;
 }
 
 @media(max-width:600px) {
-  figure.snip1390 {
-   /* max-width:100vw ; */
-   min-width:70vw ;
-   width: 100%;
+
+  .slider-content2{
+    display: flex;
+    transition: transform 0.2s ease-in-out;
   }
+  .slider-content{
+    display: none;
+    transition: transform 0.2s ease-in-out;
+  }
+  figure.snip1390 {
+    margin: 12px;
+    min-width: 70vw;
+  }
+
 }
 
 @media (max-width: 767px) {
-  .slider-content {
-    transform: translateX(-10%);
-  }
+  
 }
