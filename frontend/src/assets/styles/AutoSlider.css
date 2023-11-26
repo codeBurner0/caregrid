@@ -31,13 +31,9 @@
   }
   .slider-content2{
     display: none;
-<<<<<<< HEAD
-  }
-=======
     transition: transform 0.2s ease-in-out;
   }
 
->>>>>>> f7354657a0a4e3f8d9b9d9c4fe66db44e1549ad4
   .transformed-slider {
     transform: translateX(-190%);
     transition: transform 1.5s ease-in-out;
@@ -173,18 +169,5 @@ figure.snip1390 .profile {
 }
 
 @media (max-width: 767px) {
-<<<<<<< HEAD
-  .slider-content {
-    transform: translateX(-10%);
-  }
-  .slider-content2{
-    display: flex;
-    transition: transform 0.2s ease-in-out;
-  }
-  .slider-content1{
-    display: none;
-  }
-=======
   
->>>>>>> f7354657a0a4e3f8d9b9d9c4fe66db44e1549ad4
 }

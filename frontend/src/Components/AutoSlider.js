@@ -48,21 +48,6 @@ const CardSlider = ({ cards }) => {
                 </figcaption>
              </figure>
         ))}
-      </div>   
-      <div className='slider-content2'
-        style={{
-          transform: `translateX(-${currentIndex * 30}%)`,
-          transition: 'transform 1.5s ease-in-out',
-        }}
-      >
-        {cards.map((card, index) => (
-             <figure class="snip1390">
-                <span style={{display:'flex'}}><img src={card.image} alt="profile-sample3" class="profile" /> <h2>{card.title}</h2></span>       
-                <figcaption>
-                  <blockquote>{card.description}</blockquote>
-                </figcaption>
-             </figure>
-        ))}
       </div>
       <div className='slider-content2'
         style={{

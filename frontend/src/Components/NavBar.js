@@ -11,10 +11,6 @@ function NavBar() {
   }
   const navigate = useNavigate()
 
- 
-
-
-
   return (
     <div>
       <div className={"nav-bar"}>
@@ -52,7 +48,7 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <button className='nav_login_button'><span>Login</span></button>
+            <button className='nav_login_button' onClick={()=>navigate('/login')}><span>Login</span></button>
           </li>
         </div>
       </div>
