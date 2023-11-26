@@ -1,13 +1,13 @@
 import React from 'react'
 import {Routes,Route } from 'react-router-dom';
-
 import Login from './Components/Login'
 import Signup from './Components/Signup'
-import HomeScreen from './Components/HomeScreen';
 import ProfileScreen from './Components/ProfileScreen';
 import AdminScreen from './Components/AdminScreen';
 import ForgotPassward from './Components/ForgotPassward';
 import NavBar from './Components/NavBar';
+import HomePage from './Components/TopSec';
+import HomeScreen from './Components/HomeScreen';
 
 function App() {
   return (
