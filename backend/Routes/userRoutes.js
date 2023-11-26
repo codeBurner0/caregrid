@@ -1,8 +1,10 @@
 const express=require('express');
+const nodemailer = require ('nodemailer');
 const router=express();
 const bcrypt=require('bcryptjs');
 require('../Database/connection/connectDb');
 const User=require('../Database/models/user');
+const Otp=require('../Database/models/otp');
 const History=require('../Database/models/history');
 const cors=require('cors')
 router.use(express.json());
@@ -104,5 +106,93 @@ router.put('/update/:id',async(req,res)=>{
             res.json({err:error.message})
         }
 })
+router.post('/emailSend',async(req,res)=>{
+    let data = await User.findOne({email: req.body.email})
+    // console.log(req.body.email)
+    const response = {}
+    if(data){
+        let otpcode = Math.floor((Math.random()*10000)+1);
+        let otpData = new Otp({
+            email: req.body.email,
+            code: otpcode,
+            expireIn: new Date().getTime() + 300*1000 
+        })
+        let otpResponse = await otpData.save();
+        sendEmail();
+        res.status(200).json({message:"Success!! Please Check Your Email"});
+       
+        // mailer(manvisinghal1108@gmail.com, 1234)
+    }
+    else{
+        res.status(404).json({message:"Error check your credentials"});
+    }
+    
+})
+
+router.post('/changePassword',async(req,res)=>{
+    let data = await Otp.find({email:req.body.email, code:req.body.otpCode})
+    const response = {}
+    if(data){
+        let currentTime = new Date.getTime();
+        let diff = data.expireIn - currentTime;
+        if(diff < 0){
+            response.message = 'Token Exired'
+            response.statusText = 'Error'
+        }else{
+            let user = await User.findOne({ email: req.body.email})
+            User.password = req.body.password;
+            User.save();
+            response.message = 'Passwords Updated'
+            response.statusText = 'Success'
+        }
+    }else{
+        response.message = 'Invalid OTP'
+        response.statusText = 'Error'
+    }
+    res.status(200).json(response)
+})
+
+// const mailer = (email,otp)=>{
+async function sendEmail(){
+    let testAccount = await nodemailer.createTestAccount();
+    let transporter = nodemailer.createTransport({
+        // service: 'gmail',
+        // port: 587,
+        // secure: false,
+        // auth:{
+        //     user:'manvisinghal1108@gmail.com',
+        //     pass:'Madhurima@19'
+        // }
+        host: 'smtp.ethereal.email',
+        port: 587,
+        auth: {
+            user: 'tyrel.boyle21@ethereal.email',
+            pass: 'VZ7FNJ5hx9kWDYVXkG'
+        }
+    });
+    // var mailOPtions = {
+    //     from: 'manvisinghal1108@gmail.com',
+    //     to: 'manvisinghal285@gmail.com', 
+    //     subject: 'Sending Email using Node.js',
+    //     text: 'Thankyou for choosing us'
+    // };
+    // transporter.sendMail(mailOPtions, function(error, info){
+    //     if(error){
+    //         console.log(error);
+    //     }else{
+    //         console.log('Email sent: ' + info.response);
+    //     }
+    // })
+    let info = await transporter.sendMail({
+        from: '"Manvi Singhal 👻" <foo@gmail.com>', // sender address
+        to: "manvisinghal285@gmail.com", // list of receivers
+        subject: "Hello ✔",
+        text: "Hello", 
+        html: "<b>Hello world</b>", // html body
+    });
+    console.log('message sent', info.messageId);
+    // res.json(info)
+}
+
 module.exports=router;
 

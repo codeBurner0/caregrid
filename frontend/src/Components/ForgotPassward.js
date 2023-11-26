@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import '../assets/styles/Forgotpassword.css'
-import { BiUserCircle } from 'react-icons/bi';
+// import { BiUserCircle } from 'react-icons/bi';
 import DocImg from '../assets/images/screen.png'
 import FloatImg1 from '../assets/images/img1.png'
 import FloatImg2 from '../assets/images/img2.png'
@@ -8,6 +8,24 @@ import FloatImg3 from '../assets/images/img3.png'
 import { useNavigate} from 'react-router-dom';
 
 function ForgotPassward() {
+  const emailRef = useRef();
+  async function sendOtp() {
+    try{
+      let result = await fetch('http://localhost:5000/v1/emailSend', {
+        method: 'POST',
+        data:{email:emailRef.current.value}
+      })
+      let record = result.data;
+      if(record.status === 'Success'){
+        console.log(record.message)
+      }
+      else{
+        console.error('Something went wrong')
+      }
+    }catch(e){
+        console.log("Error", e)
+    }
+  }  
   const navigate = useNavigate()
   return (
       <div className='login-container'>
@@ -23,10 +41,10 @@ function ForgotPassward() {
                         <h1>Reset Password </h1>
                         <div className='icon-input'>
                           {/* <BiUserCircle className='i-icon1' /> */}
-                          <input type="text" name="" id="" placeholder='Enter Email Address' className='lg-input'/>
+                          <input type="text" name="" id="" placeholder='Enter Email Address' className='lg-input' ref={emailRef}/>
                         </div>
                         <div className="lg-bt-u-h">
-                          <button className="button">
+                          <button className="button" onClick={() =>sendOtp()}>
                               <span> Send Email</span>
                           </button>
                           <button className="button">
