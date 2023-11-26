@@ -29,6 +29,9 @@
     display: flex;
     transition: transform 0.2s ease-in-out;
   }
+  .slider-content2{
+    display: none;
+  }
   .transformed-slider {
     transform: translateX(-40%);
     transition:transform 1.5s ease-in-out;
@@ -128,5 +131,12 @@ figure.snip1390 .profile {
 @media (max-width: 767px) {
   .slider-content {
     transform: translateX(-10%);
+  }
+  .slider-content2{
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+  }
+  .slider-content1{
+    display: none;
   }
 }
