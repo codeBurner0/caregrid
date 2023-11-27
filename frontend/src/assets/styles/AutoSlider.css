@@ -20,6 +20,7 @@
   }
   
   .card-slider {
+
     /* display: flex; */
     overflow: hidden;
     width: 100%;
@@ -51,7 +52,7 @@
    .sliderbutton {
     text-decoration: none;
     display: inline-block;
-    padding: 8px 10px;
+    padding: 8px 15px;
     margin: 1vw;
   }
   
@@ -87,9 +88,10 @@ figure.snip1390 {
   font-size: 16px;
   background-color: rgb(51, 215, 199);
   padding: 15px;
-  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.387) 0%, rgba(255, 255, 255, 0.328) 100%);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.5);
   /* margin: 5vw; */
 }
 figure.snip1390 *,
@@ -162,8 +164,8 @@ figure.snip1390 .profile {
     transition: transform 0.2s ease-in-out;
   }
   figure.snip1390 {
-    margin: 12px;
-    min-width: 70vw;
+    margin: 15px;
+    min-width: 73vw;
   }
 
 }

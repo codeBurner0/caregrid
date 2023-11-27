@@ -46,11 +46,10 @@ function HomeScreen() {
           </div>
         </div>
 
-
         <div className='sec3'>
           <div className='inner'>
             <div className="sec3-img">
-              <img src={downdoctor} alt="" />
+              {/* <img src='' alt="" /> */}
             </div>
             <div>
               <h1>Enjoy The Features <br /> In Our Clinic</h1>
@@ -84,8 +83,10 @@ function HomeScreen() {
         </div>
 
         <div className='sec4'>
+        <div className='sec4-inner'>
           <h1>Our Services in the eyes of Patient</h1>
           <AutoSlider />
+          </div>
         </div>
 
         <div className='sec5'>

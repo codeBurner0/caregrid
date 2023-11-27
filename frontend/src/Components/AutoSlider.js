@@ -33,7 +33,7 @@ const CardSlider = ({ cards }) => {
     <div className="card-slider">
       <div className='slider-content'
         style={{
-          transform: `translateX(-${currentIndex * 40 }%)`,
+          transform: `translateX(-${currentIndex * 35 }vw)`,
           transition: 'transform 1.5s ease-in-out',
         }}
       >
@@ -51,7 +51,7 @@ const CardSlider = ({ cards }) => {
       </div>
       <div className='slider-content2'
         style={{
-          transform: `translateX(-${currentIndex * 95}%)`,
+          transform: `translateX(-${currentIndex * 80}vw)`,
           transition: 'transform 1.5s ease-in-out',
         }}
       >
