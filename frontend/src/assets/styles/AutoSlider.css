@@ -86,14 +86,16 @@ figure.snip1390 {
   color: #000000;
   text-align: center;
   font-size: 16px;
-  background-color: rgb(51, 215, 199);
+  background-color: #25bfab;
   padding: 15px;
   background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.387) 0%, rgba(255, 255, 255, 0.328) 100%);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
   /* margin: 5vw; */
 }
+
 figure.snip1390 *,
 figure.snip1390 *:before,
 figure.snip1390 *:after {
