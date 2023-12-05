@@ -58,9 +58,9 @@ function Signup() {
         }
     }
     return (
-            <div className='login-container'>
-                <div className="login-pg">
-                    <div className="login-pg-pt1">
+            <div className='signup-container'>
+                <div className="signup-pg">
+                    <div className="signup-pg-pt1">
                         <img src={RegDocImg} alt="" className='rg-doc-img' />
                         <img src={FloatImg3} alt="" className='rg-float-img1 float-img' />
                         <img src={FloatImg2} alt="" className='rg-float-img2 float-img' />

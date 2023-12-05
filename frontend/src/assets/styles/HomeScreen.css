@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Libre+Baskerville&family=Montserrat&display=swap');
-*{
+.main{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .sec1{
@@ -126,12 +127,8 @@
     z-index: 1;
 }
 
-.sec2 {
-    background: #eff8f86a ;
-    padding: 5vw;
-}
 
-.sec2 h1 , .sec3 h1 , .sec4 h1{
+ .sec3 h1 , .sec4 h1{
     font-family: Libre Baskerville,serif;
     padding: 2vw 5vw 5vw 5vw;
     width: 50vw;
@@ -140,29 +137,6 @@
     text-shadow: 2px 2px #06201c35;
 
 }
-.sec2 .inner{
-    margin: 3vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2vw;
-
-}
-.sec2 .inner .card{
-    height: 300px;
-    /* width: 350px; */
-    border-radius: 10px;
-    background:  #f1f7f7;
-    box-shadow: 0.2px 0.2px 5px rgba(130, 137, 135, 0.17) ;
-}
-.sec2 .inner .card:hover{
-    height: 300px;
-    width: 370px;
-    border-radius: 10px;
-    background:  #f1f7f7;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.17) ;
-    transition: 0.5s;
-}
-
 .sec3{
     padding: 1vw;
     background: #f2f9f96a ;

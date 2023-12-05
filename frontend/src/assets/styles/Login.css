@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 .login-container {
-    background-color: rgba(128, 128, 128, 0.178);
-    width: 100vw;
+    background: linear-gradient(to right, rgba(121, 232, 217, 0.372) 0%, rgba(157, 208, 202, 0.298) 71%, #25bfab 71%, #25bfab 100%);
     min-height: 100vh;
     font-family: monospace;
-    overflow: hidden;
-
+    box-sizing: border-box;
+    width: 98.6vw;
+    overflow: auto;
 }
 
 .login-pg {
+
     display: grid;
     width: 90vw;
     grid-template-columns: 1fr 1fr;
@@ -17,6 +18,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow-y: hidden;
+
 }
 
 .login-pg-pt1 {
@@ -25,7 +28,8 @@
     width: 30vw;
     height: 39vw;
     border-radius: 3vw 0vw 0vw 3vw;
-
+    margin-top: 50px;
+   
 }
 
 .login-pg-pt2 {
@@ -34,7 +38,8 @@
     width: 60vw;
     height: 39vw;
     border-radius: 0vw 3vw 3vw 0vw;
-
+    margin-top: 50px;
+    overflow-y: hidden;
 }
 
 .lg-doc-img {
@@ -54,21 +59,21 @@
 .float-img1{
     width: 5vw;
     position: absolute;
-    top: 11vw;
+    top: 15vw;
     left: 12vw;
     filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
 }
 .float-img2{
     width: 5vw;
     position: absolute;
-    top: 5vw;
+    top: 9vw;
     left: 28vw;
     filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
 }
 .float-img3{
     width: 5vw;
     position: absolute;
-    top: 16vw;
+    top: 20vw;
     left: 40vw;
     filter: drop-shadow(10px 10px 10px  rgba(0, 0, 0, 0.31));
 }
@@ -84,7 +89,7 @@
 .lg-fields {
     position: relative;
     left: 21vw;
-    top: 5vw;
+    top: 9vw;
     width: 32vw;
     height: 38vw;
 
@@ -96,11 +101,14 @@
     font-family: 'Libre Baskerville', serif;
     transition: transform .8s;
     color: rgb(78, 77, 77);
+    color: #041613;
+    text-shadow: 2px 2px #06201c35;
+    padding-bottom: 1vw;
 }
 
 .lg-fields>h1:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.02);
     font-weight: 600;
     color: black;
 }
@@ -122,7 +130,8 @@
 .lg-input:focus {
     outline: none;
     overflow: hidden;
-    border: 2px solid black;
+    border: 1px solid black;
+    box-sizing: none;
 }
 .lg-input:hover {
     cursor: pointer;
@@ -196,10 +205,12 @@
 }
 
 .err-field{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     color: red;
     font-weight: 600;
     text-align: center;
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 
 /* button styling */
@@ -219,6 +230,7 @@
     font-family: 'Libre Baskerville', serif;
     font-weight: 200;
     margin: 1vw 0vw;
+    margin-top: 0;
     margin-bottom: 0.6vw;
 }
 
@@ -250,6 +262,7 @@
 .signup-rd {
     font-size: 1.2vw;
     text-align: center;
+    padding-top: 0.5vw;
 }
 
 .signup-p {

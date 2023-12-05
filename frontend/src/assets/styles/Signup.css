@@ -1,12 +1,13 @@
-.login-container {
-    background-color: rgba(128, 128, 128, 0.178);
+.signup-container {
+    background: linear-gradient(to right, rgba(121, 232, 217, 0.372) 0%, rgba(157, 208, 202, 0.298) 71%, #25bfab 71%, #25bfab 100%);
     width: 100vw;
     min-height: 100vh;
     font-family: monospace;
-
+    width: 98.6vw;
+    overflow: auto;
 }
 
-.login-pg {
+.signup-pg {
     display: grid;
     width: 90vw;
     grid-template-columns: 1fr 1fr;
@@ -14,9 +15,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.login-pg-pt1 {
+.signup-pg-pt1 {
     background: #25bfab;
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.319);
     width: 30vw;
@@ -26,12 +30,12 @@
 }
 
 .rg-pg-pt2 {
-    background: white;
+    background: #eafffd;
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.31);
     width: 60vw;
     height: 39vw;
     border-radius: 0vw 3vw 3vw 0vw;
-
+    overflow-y: hidden;
 }
 
 .rg-doc-img {
@@ -83,7 +87,7 @@
 }
 
 .container {
-    width: 34vw;
+    width: 36vw;
     padding: 2vw;
     position: absolute;
     left: 48vw;
@@ -102,10 +106,12 @@
 
 .container>h1 {
     font-size: 2.5vw;
-    text-align: center;
+    margin-left: -2vw;
     font-family: 'Libre Baskerville', serif;
     transition: transform .8s;
     color: rgb(78, 77, 77);
+    color: #041613;
+    text-shadow: 2px 2px #06201c35;
 }
 
 .container>h1:hover {
@@ -242,12 +248,12 @@
 
 
 @media only screen and (max-width: 900px) {
-    .login-container {
+    .signup-container {
         height: 134vh;
 
     }
 
-    .login-pg {
+    .signup-pg {
         display: grid;
         width: 90vw;
         grid-template-columns: 1fr;
@@ -257,7 +263,7 @@
         transform: translate(25vw, 20vw);
     }
 
-    .login-pg-pt1 {
+    .signup-pg-pt1 {
         width: 50vw;
         height: 30vw;
         border-radius: 3vw 3vw 0vw 0vw;

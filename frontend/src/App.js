@@ -14,8 +14,8 @@ function App() {
     <div>
         <Routes>
               <Route  path ="/" exact element={<HomeScreen />} />
-              <Route  path ="/login" exact element= {<Login />} />
-              <Route  path ="/signup" exact element= {<Signup />} />
+              <Route  path ="/login" exact element= {<><NavBar/><Login /></>} />
+              <Route  path ="/signup" exact element= {<><NavBar/><Signup /></>} />
               <Route  path ="/profile" element={<ProfileScreen />}/>
               <Route  path ="/forgotpassword" element={<ForgotPassward />}/>
               <Route path="/admin" element={<AdminScreen/>}></Route>

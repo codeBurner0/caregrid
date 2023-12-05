@@ -59,9 +59,10 @@
     grid-template-columns: 20vw 80vw;
     background: linear-gradient(to right, rgba(121, 232, 217, 0.372) 0%, rgba(157, 208, 202, 0.298) 71%, #25bfab 71%, #25bfab 100%);
     padding: 1vw;
+    overflow-x:hidden ;
 }
 
-.nav-bar.active{
+.nav-bar.active {
     background: none;
     background-color: rgba(121, 232, 217, 0.372);
 }
@@ -138,10 +139,10 @@
     width: 10vw;
     transition: all 0.5s;
     cursor: pointer;
-    height: 3vw;
+    height: 2.8vw;
     font-weight: 600;
     margin: 0.8vw 0vw;
-    margin-right:4.5vw;
+    margin-right: 4.5vw;
 }
 
 .nav_login_button:hover {
