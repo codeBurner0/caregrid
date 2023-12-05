@@ -10,7 +10,8 @@ import FloatImg2 from '../assets/images/img2.png'
 import FloatImg3 from '../assets/images/img3.png'
 function ForgotPassword() {
     const [email, setEmail] = useState("")
-    const [err, setErr] = useState("")
+    const [err, setErr] = useState('')
+    const [active, setActive] = useState(false)
     const navigate = useNavigate();
 
     async function Handle() {
@@ -25,10 +26,9 @@ function ForgotPassword() {
             console.log("Error", e)
         })
         result = await result.json()
-        if (!result.message) {
+        if (result.message==="email sent succesfully") {
             localStorage.setItem("user", JSON.stringify(result))
-            navigate(0)
-            navigate('/')
+            setActive(true)
             console.log(result)
         } else {
             const message = result.message;
@@ -44,9 +44,10 @@ function ForgotPassword() {
                         <img src={FloatImg3} alt="" className='rg-float-img1 float-img' />
                         <img src={FloatImg2} alt="" className='rg-float-img2 float-img' />
                         <img src={FloatImg1} alt="" className='rg-float-img3 float-img' />
+                       
                     </div>
-                    <div className="rg-pg-pt2">
-                        <div className="fp_container">
+                   <div className="fp-pg-pt2">
+                   {!active? <div className="fp_container" style={{position:'absolute'}}>
                             <h1 className='title'>Forgot Password</h1>
                             <input type="text" className="register-login input3 fp_input" placeholder='Enter your email'
                                 onChange={(e) => setEmail(e.target.value)} />
@@ -55,8 +56,10 @@ function ForgotPassword() {
                             <button className="register-button" onClick={() => Handle()}>
                                 <span> Send Email </span>
                             </button>
-                        </div>
+                        </div>:
+                        <div className='fp_thanks'>Email sent Successfully!</div>}
                     </div>
+                    
                 </div>
             </div>
     )
