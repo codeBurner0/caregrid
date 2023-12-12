@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+  
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.drcontainer{
+  padding: 0;
+  margin:0;
+  background-color: #fff;
+}
+.dheading{
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-align: left;
+  position: relative;
+  margin:2rem 0 3rem 6rem;
+}
+.dheading .doc-text1{
+  font-family: 'Signika Negative', sans-serif;
+    font-size: 50px;
+    color: #2a8478;
+    text-shadow: 2px 2px #06201c35;
+}
+
+.dheading .doc-text{
+  font-family: 'Signika Negative', sans-serif;
+    font-size: 50px;
+    color: #041613;
+    text-shadow: 2px 2px #06201c35;
+}
+.card-wrapper{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.drcard{
+  width: 15rem;
+  background-color: #ebeef8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  border: 0;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding-bottom:1rem ;
+}
+.drcard .card-img{
+  width: 100%;
+  height: 15rem;
+  -webkit-clip-path: polygon(0 0,100% 0, 100% 78%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+  border-radius: 8px;
+}
+/* .card-img img{
+  width: 20vw;
+  height: 10rem;
+} */
+.profile-img{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -11rem;
+  z-index: 999;
+  border: .1rem solid #2a8478;
+}
+.drcard h1{
+  font-size: 1.5rem;
+  /* color: #333; */
+  margin: 0.5rem 0;
+
+  font-family: 'Signika Negative', sans-serif;
+    /* font-size: 45px; */
+    color: #041613;
+    /* text-shadow: 2px 2px #06201c35; */
+}
+.job-title{
+  color: #777;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.about{
+  font-size: 0.8rem;
+  margin: 0.5rem 1rem 0 1rem;
+  font-style: sans-serif;
+  text-align: center;
+  color: #041613;
+  font-family: 'Signika', sans-serif;
+
+}
+.drcard .card-btn{
+  padding: 0.5rem 2.5rem;
+  text-align: center;
+  width: 13vw;
+  background-color: #2a8478;
+  border-radius: 2px;
+  margin: 0.1rem .1rem 1rem 0.1rem;
+  color: #eee;
+  font-size: 1rem;
+  font-family: 'Signika Negative', sans-serif;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0.4rem;
+}
+.drcard .card-btn:hover{
+  transform: translateY(2px);
+  box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2);
+}
+.drcard .card-btn:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.find-more{
+  text-align: right;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-right: 6rem;
+  margin: 2rem 6rem 4rem 0;
+} 
+.more-btn{
+  padding: 1rem 1.5rem;
+  background-color: #2a8478;
+  border-radius: .1rem;
+  margin: 0.1rem 0;
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 1rem;
+  font-family: 'Signika Negative', sans-serif;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.more-btn:hover{
+  transform: scale(1.5);
+  transition: .1s;
+  box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2);
+}
+
+
+@media screen and (min-width:700px) {
+  .card-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .drcard{
+    
+    margin: 2rem;
+    transition: transform .5s;
+  }
+
+  @keyframes fadeIn {
+    from{
+      opacity: 0
+    }
+    to{
+      opacity: 1
+    }
+  }
+
+  .card:nth-child(1){
+    animation:fadeIn .5s .5s backwards;
+  }
+  .card:nth-child(2){
+    animation:fadeIn .5s 1s backwards;
+  }
+  .card:nth-child(3){
+    animation:fadeIn .5s 1.5s backwards;
+  }
+  .card:nth-child(4){
+    animation:fadeIn .5s 2s backwards;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+  }
+}

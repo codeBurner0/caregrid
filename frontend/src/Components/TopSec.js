@@ -1,8 +1,10 @@
 import React from 'react'
 import Doctor from "../assets/images/TopSec/DoctorHome.png"
 import Banner from "../assets/images/TopSec/BannerTopsec.png"
+import { useNavigate } from 'react-router-dom';
 import '../assets/styles/TopSec.css'
 function TopSec() {
+  const navigate = useNavigate();
   return (
     <div className='topsec_container'>
       <section className="topsec_section">
@@ -19,7 +21,7 @@ function TopSec() {
             </p>
           </div>
           <div className="topsec_buttons_container">
-            <button className='button topsec_button1'><span>Patient</span></button>
+            <button className='button topsec_button1' onClick={() => navigate('/hospital')}><span>Patient</span></button>
             <button className='topsec_button2'> <span>Hospital &nbsp; &#x00bb;</span></button>
           </div>
         </div>

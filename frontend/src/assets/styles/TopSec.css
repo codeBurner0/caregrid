@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 70vw 30vw;
     background: linear-gradient(to right, rgba(121, 232, 217, 0.372) 0%, rgba(157, 208, 202, 0.298) 71%, #25bfab 71%, #25bfab 100%);
-    height: 86.8vh;
+    /* height: 40.8vw; */
     overflow: hidden;
 }
 
@@ -12,7 +12,6 @@
     margin-top: 4vw;
     margin-left: 5vw;
 }
-
 .topsec_banner{
     width: 25vw;
     margin-bottom: -1vw;
@@ -21,7 +20,7 @@
 
 .topsec_h2 {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 45px;
+    font-size: 3.2vw;
     color: #041613;
     text-shadow: 2px 2px #06201c35;
 }
@@ -42,12 +41,14 @@
 .topsec_buttons_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5vw;
 }
 
 .topsec_button1 {
     width: 15vw;
     background-color: #2a8478;
     margin-left: 1.5vw;
+    margin: 1vw 0vw;
 }
 
 
@@ -65,6 +66,7 @@
         height: 3.5vw;
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         font-weight: 200;
+        margin: 1vw 0vw;
         margin-bottom: 0.6vw;
         margin-left: -3.5vw;
 }
@@ -84,5 +86,39 @@
     position: absolute;
     top:5.5vw;
     right: 3.8vw;
-    width: 44.5vw;
+    width: 41.3vw;
+}
+
+@media (max-width:700px){
+    .topsec_section {
+        grid-template-columns: 50vw 50vw;
+        height: 60.8vh;
+    }
+    .topsec_sec1 {
+        width: 54vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+    }
+    .topsec_banner{
+        width: 40vw;
+        margin-top: -4.8vw;
+        margin-left: 4vw;
+    }
+    .topsec_h2 {
+        font-size: 4.2vw;
+    }
+    .topsec_para_container {
+        padding: 2vw 1.6vw;
+        width: 40vw;
+    }
+    
+    .topsec_p {
+        font-size: 2.5vw;
+    }
+    .top_sec_docimg {
+        position: absolute;
+        top:40.5vw;
+        right: 3.8vw;
+        width: 44.5vw;
+    }
 }

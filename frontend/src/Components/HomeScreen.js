@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/styles/HomeScreen.css'
-import { IoIosGlobe } from "react-icons/io";
+
 
 import NavBar from './NavBar'
 import AutoSlider from './AutoSlider'
@@ -13,6 +13,7 @@ import design3 from '../assets/images/design3.png'
 import downdoctor from '../assets/images/down-doctor.png'
 import TopSec from './TopSec';
 import SedSec from './SedSec';
+import ThirdSec from './ThirdSec'
 
 function HomeScreen() {
 
@@ -24,43 +25,7 @@ function HomeScreen() {
         <NavBar />
         <TopSec />
         <SedSec/>
-
-        <div className='sec3'>
-          <div className='inner'>
-            <div className="sec3-img">
-              {/* <img src='' alt="" /> */}
-            </div>
-            <div>
-              <h1>Enjoy The Features <br /> In Our Clinic</h1>
-              <div className="inner2">
-                <div>
-                  <IoIosGlobe />
-                  <div className="card">
-                    <h2>Online System</h2>
-                    <p>Our website already has a online ecosystem</p>
-                  </div>
-                </div>
-                <div>
-                  <img src="https://images.pexels.com/" />
-                  <div className="card">
-                    <h2>24 Hours Open</h2>
-                    <p>Ready to receive patients 24 hours a day</p>
-                  </div>
-                </div>
-
-                <div>
-                  <img src="https://images.pexels.com/" />
-                  <div className="card">
-                    <h2>Easy Access</h2>
-                    <p>Easy access for allfacilities</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
+        <ThirdSec />
         <div className='sec4'>
         <div className='sec4-inner'>
           <h1>Our Services in the eyes of Patient</h1>

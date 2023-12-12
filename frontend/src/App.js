@@ -8,6 +8,7 @@ import ForgotPassward from './Components/ForgotPassward';
 import NavBar from './Components/NavBar';
 import HomePage from './Components/TopSec';
 import HomeScreen from './Components/HomeScreen';
+import Hospital from './Pages/Hospital/Components/Hospital'
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
               <Route  path ="/signup" exact element= {<><NavBar/><Signup /></>} />
               <Route  path ="/profile" element={<ProfileScreen />}/>
               <Route  path ="/forgotpassword" element={<ForgotPassward />}/>
-              <Route path="/admin" element={<AdminScreen/>}></Route>
+              <Route path="/admin" element={<AdminScreen />}></Route>
+              <Route path="/hospital" element={<Hospital />}></Route>
         </Routes>
     </div>
   )

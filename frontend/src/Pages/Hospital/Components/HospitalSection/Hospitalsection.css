@@ -1,0 +1,138 @@
+.hospital-section{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #2a8478;
+}
+.h-heading{
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin: 3rem 0 0 6rem;
+  text-align: left;
+  font-family: 'Signika Negative', sans-serif;
+    font-size: 50px;
+    color: #25bfab;
+    text-shadow: 2px 2px #06201c35;
+  position: relative;
+}
+
+.h-heading .h-text{
+  font-family: 'Signika Negative', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px #06201c35;
+}
+.h-img{
+  width: 100%;
+  height: 100%;
+}
+.hcard{
+  margin: 4rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  align-items: center;
+}
+.hcard>.harticle{
+  background-color: #fff;
+  border: none;
+  /* border-radius: 10px; */
+  box-shadow: 2px 8px 16px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+  transition: transform .3s;
+}
+.hcard>.harticle:hover{
+  transform: translateY(5px);
+  cursor: pointer;
+  box-shadow: 2px 8px 16px 5px rgba(0,0,0,0.1);
+}
+.card > .harticle .h-img{
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 20px;
+}
+.htext{
+  padding: 0 20px 20px;
+  color: #041613;
+  font-family: 'Signika', sans-serif;
+}
+.htext .hname{
+  text-transform: uppercase;
+  font-family: 'Signika Negative', sans-serif;
+  color: #041613;
+  text-shadow: 2px 2px #06201c35;
+  font-size: 25px;
+  font-weight: 700;
+}
+.htext .haddress{
+  /* font-size: 14px; */
+  /* line-height: 1.5; */
+  /* text-shadow: 2px 2px #06201c35; */
+  font-size: 1rem;
+  margin: 0.5rem 1rem 0 1rem;
+  font-style: sans-serif;
+  text-align: center;
+  color: #041613;
+  font-family: 'Signika', sans-serif;
+}
+.htext .hbtn{
+  background-color: #2a8478;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-family: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  /* font-size: 17px; */
+  margin: 15px 1px;
+  /* box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.3); */
+  font-size: 1rem;
+  font-family: 'Signika Negative', sans-serif;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.htext .hbtn:hover{
+  transform: scale(1.02);
+  transition: .5s;
+}
+
+.h-find-more{
+  text-align: right;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-right: 6rem;
+  margin-bottom: 4rem;
+} 
+.h-more-btn{
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: .1rem;
+  margin: 0.1rem 0;
+  text-transform: uppercase;
+  color: #2a8478;
+  font-size: 1rem;
+  font-size: 1rem;
+  font-family: 'Signika Negative', sans-serif;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width:700px){
+  .hcontainer{
+    flex-direction: column;
+    width: 100%;
+  }
+  .hcard{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:500px){
+  .hcard{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hcard>.harticle{
+    text-align: center;
+  }
+}
