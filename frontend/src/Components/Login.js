@@ -55,8 +55,7 @@ function Login() {
         if (!result.message) {
             localStorage.setItem("user", JSON.stringify(result))
             console.log("sucess")
-            navigate(0)
-            navigate('/show')
+            navigate('/')
             console.log(result)
         } else {
             const message = result.message;
