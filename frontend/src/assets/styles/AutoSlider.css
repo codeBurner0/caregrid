@@ -124,11 +124,12 @@ figure.snip1390 h2 {
   color: #ffffff;
 }
 figure.snip1390 h4 {
-  color: #a6a6a6;
+  color :black;
 }
 figure.snip1390 blockquote {
   font-size: 1em;
-  padding: 20px 20px 40px 50px;
+  padding: 20px 20px 30px 50px;
+ 
   margin-top: 10px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -136,7 +137,7 @@ figure.snip1390 blockquote {
   text-align: left;
   position: relative;
 }
-figure.snip1390 blockquote:before {
+/* figure.snip1390 blockquote:before {
   font-family: 'FontAwesome';
   content: "\201C";
   position: absolute;
@@ -144,8 +145,18 @@ figure.snip1390 blockquote:before {
   opacity: 0.25;
   font-style: normal;
   top: 0px;
-  left: 20px;
+  left: 10px;
 }
+figure.snip1390 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201D";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  bottom: -30px;
+  right: 10px;
+} */
 figure.snip1390 .profile {
   width: 65px;
   border-radius: 50%;

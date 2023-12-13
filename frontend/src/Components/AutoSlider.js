@@ -62,7 +62,7 @@ const CardSlider = ({ cards }) => {
                       <h4>{card.designation}</h4>
                       </div></span>       
                 <figcaption>
-                  <blockquote>{card.description}</blockquote>
+                  <blockquote> \201D {card.description} &#8221; </blockquote>
                 </figcaption>
              </figure>
         ))}
@@ -97,21 +97,21 @@ const AutoSlider = () => {
       description: 'A big shoutout to caregrid for streamlining my healthcare journey. From speedy appointments to accurate information, its a digital healthcare experience that truly prioritizes my well-being.',
     },
     {
-      title: 'Card 4',
+      title: 'Manya Sharma',
       designation:'Freelancer',
       image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
-      description: 'Description for Card 4',
+      description: 'CareGrid streamlines healthcare coordination seamlessly, enhancing patient care through efficient communication and collaboration.',
     },
     {
-      title: 'Card 5',
+      title: 'Reema Singh',
       designation:'Freelancer',
-      description: 'Description for Card 5',
+      description: 'CareGrid revolutionizes healthcare communication, fostering real-time collaboration and optimizing patient outcomes with its intuitive platform.',
       image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
     },
     {
-      title: 'Card 6',
+      title: 'Karan Singh',
       designation:'Freelancer',
-      description: 'Description for Card 6',
+      description: 'CareGrid innovative platform offers a cohesive solution for healthcare teams, empowering seamless coordination and ensuring enhanced patient-centered care through streamlined communication.',
       image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
     }
   ];

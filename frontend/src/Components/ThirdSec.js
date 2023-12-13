@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoIosGlobe } from "react-icons/io";
 import '../assets/styles/ThirdSec.css'
+import doc from '../assets/images/ThirdSec/img1.png'
 
 export default function ThirdSec() {
   return (
@@ -8,7 +9,7 @@ export default function ThirdSec() {
    <div className='sec3'>
           <div className='inner'>
             <div className="sec3-img">
-              <img src='' alt="" />
+              <img src={doc} alt="" />
             </div>
             <div>
               <h1>Enjoy The Features <br /> In Our Clinic</h1>
@@ -16,7 +17,7 @@ export default function ThirdSec() {
     <div className='tsec-body'>
 
     <div class="grid">
-  <div class="card">
+  <div class="ts-card">
     <span class="icon">
       <svg
         viewBox="0 0 24 24"
@@ -56,7 +57,7 @@ export default function ThirdSec() {
       <div class="line line-3"></div>
     </div>
   </div>
-  <div class="card">
+  <div class="ts-card">
     <span class="icon">
       <svg
         viewBox="0 0 24 24"
@@ -103,7 +104,7 @@ export default function ThirdSec() {
       <div class="line line-3"></div>
     </div>
   </div>
-  <div class="card">
+  <div class="ts-card">
     <span class="icon">
       <svg
         viewBox="0 0 24 24"

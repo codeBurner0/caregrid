@@ -2,7 +2,7 @@
     background: #f2f9f96a ;;
     padding: 5vw;
     /* background-image: linear-gradient(to bottom left, #25bfab, white); */
-    background-image: url(../images/HomeScreen/SedSec/bg.png);
+    /* background-image: url(../images/HomeScreen/SedSec/bg.png); */
     background-repeat: no-repeat;
     /* background-size: contain */
     background-position: 0% 0%;
@@ -13,7 +13,7 @@
 
 .sec2 h1{
     font-family: Libre Baskerville,serif;
-    padding: 2vw 5vw 1vw 5vw;
+    padding: 1vw 5vw 1vw 5vw;
     width: 50vw;
     word-spacing: 3px;
     font-size: 3vw;
@@ -25,25 +25,24 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    
 
 }
 .sec2 img{
-    margin-left: 10vw;
-    margin-top: 2vh;
+    margin-left: 43%;
+    margin-bottom: 10px;
     color: #25bfab;
-    height: 6vh;
-    width: 3vw;
+    height: 50px;
+    width: 50px;
     padding: 2px 2px 2px 2px;
     border: #092d29 solid 1px;
-    border-radius: 20px;
-    flex: 1 1 35rem;
+    border-radius: 50%;
     transition: 0.3s;
     cursor: pointer;
 }
-.sec2 img:hover{
-    height: 7vh;
-    width: 4vw;
-}
+
 .sec2 h2{
     margin-top: 0.5vh;
     text-align: center;
@@ -51,23 +50,21 @@
     font-family: Libre Baskerville,serif;
 }
 .sec2 p{
-    margin-left: 2vw;
-    margin-right: 1vw;
+    margin-left: 1.2vw;
+    /* margin-right: 1vw; */
 }
 .sec2 .inner .card{
-    height: 45vh;
-    width: 25vw;
+    padding: 2.5vw 1vw;
+    display: grid;
+    /* height: 25vw; */
+    background-color: rgba(245, 245, 245, 0.599);
+    justify-content: center;
     border-radius: 10px;
-    box-shadow: 2px 3px 5px rgba(130, 137, 135, 0.17) ;
+    box-shadow: 2px 3px 15px rgba(130, 137, 135, 0.17) ;
 }
 .sec2 .inner .card:hover{
-    /* height: 46vh; */
     transform: scale(1.03,1.03);
-    /* background-image: url(../images/SedSec/bg.png); */
     background-image: linear-gradient(to bottom left, #45ddc9b4, white);
-    /* background-image: url(../images/SedSec/Teal\ Medical.png); */
-    /* background-image: url(../images/SedSec/bg3.png); */
-    /* background-color: white; */
     background-repeat: no-repeat;
     background-position: contain;
     background-size: cover;
@@ -76,22 +73,20 @@
     transition: 0.5s;
 }
 .card_button{
-    width: 12vw;
     background-color: #25bfab;
-    height: 6vh;
-    margin-left: 1.5vw;
+    padding: 1vw 1.5vw;
+    display: flex;
+    justify-content: center;
     border-radius: 2vw;
     font-family: Libre Baskerville,serif;
     margin-top: 1.5vw;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .card_button:hover{
-    width: 13vw;
-    transition: all 0.5s;
-    cursor: pointer;
-    background-color: #25bfab;
+    content: '\00bb';
 }
 .card_button span {
     cursor: pointer;

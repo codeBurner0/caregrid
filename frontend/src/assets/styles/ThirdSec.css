@@ -96,8 +96,17 @@
     position: relative;
     z-index: 1;
   }
+
+  .sec3 .inner .sec3-img img{
+    width: 30vw;
+    /* height: 63vh; */
+    /* margin: 0px 0px -390px 0px ; */
+    position: relative;
+    top:2vw;
+    
+  }
   
-  .card {
+  .ts-card {
     background-color: var(--background-color);
     box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
     padding: 4.5vw 2vw 2vw 2vw ;
@@ -106,20 +115,20 @@
     position: relative;
     transition: box-shadow 0.25s;
   }
-  .card::before {
+  .ts-card::before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 15px;
     background-color: var(--card-background-color);
   }
-  .card .icon {
+  .ts-card .icon {
     z-index: 2;
     position: relative;
     display: table;
     padding: 8px;
   }
-  .card .icon::after {
+  .ts-card .icon::after {
     content: "";
     position: absolute;
     inset: 4.5px;
@@ -130,7 +139,7 @@
             backdrop-filter: blur(2px);
     transition: background-color 0.25s, border-color 0.25s;
   }
-  .card .icon svg {
+  .ts-card .icon svg {
     position: relative;
     z-index: 1;
     display: block;
@@ -140,7 +149,7 @@
     color: var(--card-icon-color);
     transition: color 0.25s;
   }
-  .card h4 {
+  .ts-card h4 {
     z-index: 2;
     position: relative;
     margin: 12px 0 4px 0;
@@ -150,7 +159,7 @@
     line-height: 2;
     color: var(--card-label-color);
   }
-  .card p {
+  .ts-card p {
     z-index: 2;
     position: relative;
     margin: 0;
@@ -158,7 +167,7 @@
     line-height: 1.7;
     color: var(--text-color);
   }
-  .card .shine {
+  .ts-card .shine {
     border-radius: inherit;
     position: absolute;
     inset: 0;
@@ -167,7 +176,7 @@
     opacity: 0;
     transition: opacity 0.5s;
   }
-  .card .shine:before {
+  .ts-card .shine::before {
     content: "";
     width: 150%;
     padding-bottom: 150%;
@@ -180,7 +189,7 @@
     transform: translateX(-50%);
     background-image: var(--card-shine-gradient);
   }
-  .card .background {
+  .ts-card .background {
     border-radius: inherit;
     position: absolute;
     inset: 0;
@@ -188,11 +197,11 @@
     -webkit-mask-image: radial-gradient(circle at 60% 5%, black 0%, black 15%, transparent 60%);
     mask-image: radial-gradient(circle at 60% 5%, black 0%, black 15%, transparent 60%);
   }
-  .card .background .tiles {
+  .ts-card .background .tiles {
     opacity: 0;
     transition: opacity 0.25s;
   }
-  .card .background .tiles .tile {
+  .ts-card .background .tiles .tile {
     position: absolute;
     background-color: var(--card-tile-color);
     -webkit-animation-duration: 8s;
@@ -201,73 +210,73 @@
             animation-iteration-count: infinite;
     opacity: 0;
   }
-  .card .background .tiles .tile.tile-4, .card .background .tiles .tile.tile-6, .card .background .tiles .tile.tile-10 {
+  .ts-card .background .tiles .tile.tile-4, .ts-card .background .tiles .tile.tile-6, .ts-card .background .tiles .tile.tile-10 {
     -webkit-animation-delay: -2s;
             animation-delay: -2s;
   }
-  .card .background .tiles .tile.tile-3, .card .background .tiles .tile.tile-5, .card .background .tiles .tile.tile-8 {
+  .ts-card .background .tiles .tile.tile-3, .ts-card .background .tiles .tile.tile-5, .ts-card .background .tiles .tile.tile-8 {
     -webkit-animation-delay: -4s;
             animation-delay: -4s;
   }
-  .card .background .tiles .tile.tile-2, .card .background .tiles .tile.tile-9 {
+  .ts-card .background .tiles .tile.tile-2, .ts-card .background .tiles .tile.tile-9 {
     -webkit-animation-delay: -6s;
             animation-delay: -6s;
   }
-  .card .background .tiles .tile.tile-1 {
+  .ts-card .background .tiles .tile.tile-1 {
     top: 0;
     left: 0;
     height: 10%;
     width: 22.5%;
   }
-  .card .background .tiles .tile.tile-2 {
+  .ts-card .background .tiles .tile.tile-2 {
     top: 0;
     left: 22.5%;
     height: 10%;
     width: 27.5%;
   }
-  .card .background .tiles .tile.tile-3 {
+  .ts-card .background .tiles .tile.tile-3 {
     top: 0;
     left: 50%;
     height: 10%;
     width: 27.5%;
   }
-  .card .background .tiles .tile.tile-4 {
+  .ts-card .background .tiles .tile.tile-4 {
     top: 0;
     left: 77.5%;
     height: 10%;
     width: 22.5%;
   }
-  .card .background .tiles .tile.tile-5 {
+  .ts-card .background .tiles .tile.tile-5 {
     top: 10%;
     left: 0;
     height: 22.5%;
     width: 22.5%;
   }
-  .card .background .tiles .tile.tile-6 {
+  .ts-card .background .tiles .tile.tile-6 {
     top: 10%;
     left: 22.5%;
     height: 22.5%;
     width: 27.5%;
   }
-  .card .background .tiles .tile.tile-7 {
+  .ts-card .background .tiles .tile.tile-7 {
     top: 10%;
     left: 50%;
     height: 22.5%;
     width: 27.5%;
   }
-  .card .background .tiles .tile.tile-8 {
+  .ts-card .background .tiles .tile.tile-8 {
     top: 10%;
     left: 77.5%;
     height: 22.5%;
     width: 22.5%;
   }
-  .card .background .tiles .tile.tile-9 {
+  .ts-card .background .tiles .tile.tile-9 {
     top: 32.5%;
     left: 50%;
     height: 22.5%;
     width: 27.5%;
   }
-  .card .background .tiles .tile.tile-10 {
+  .ts-card .background .tiles .tile.tile-10 {
     top: 32.5%;
     left: 77.5%;
     height: 22.5%;
@@ -289,96 +298,96 @@
       opacity: 0;
     }
   }
-  .card .background .line {
+  .ts-card .background .line {
     position: absolute;
     inset: 0;
     opacity: 0;
     transition: opacity 0.35s;
   }
-  .card .background .line:before, .card .background .line:after {
+  .ts-card .background .line:before, .ts-card .background .line:after {
     content: "";
     position: absolute;
     background-color: var(--card-line-color);
     transition: transform 0.35s;
   }
-  .card .background .line:before {
+  .ts-card .background .line:before {
     left: 0;
     right: 0;
     height: 1px;
     transform-origin: 0 50%;
     transform: scaleX(0);
   }
-  .card .background .line:after {
+  .ts-card .background .line:after {
     top: 0;
     bottom: 0;
     width: 1px;
     transform-origin: 50% 0;
     transform: scaleY(0);
   }
-  .card .background .line.line-1:before {
+  .ts-card .background .line.line-1:before {
     top: 10%;
   }
-  .card .background .line.line-1:after {
+  .ts-card .background .line.line-1:after {
     left: 22.5%;
   }
-  .card .background .line.line-1:before, .card .background .line.line-1:after {
+  .ts-card .background .line.line-1:before, .ts-card .background .line.line-1:after {
     transition-delay: 0.3s;
   }
-  .card .background .line.line-2:before {
+  .ts-card .background .line.line-2:before {
     top: 32.5%;
   }
-  .card .background .line.line-2:after {
+  .ts-card .background .line.line-2:after {
     left: 50%;
   }
-  .card .background .line.line-2:before, .card .background .line.line-2:after {
+  .ts-card .background .line.line-2:before, .ts-card .background .line.line-2:after {
     transition-delay: 0.15s;
   }
-  .card .background .line.line-3:before {
+  .ts-card .background .line.line-3:before {
     top: 55%;
   }
-  .card .background .line.line-3:after {
+  .ts-card .background .line.line-3:after {
     right: 22.5%;
   }
-  .card:hover {
+  .ts-card:hover {
     box-shadow: 0px 3px 6px var(--card-hover-box-shadow-1), 0px var(--card-hover-box-shadow-2-y) var(--card-hover-box-shadow-2-blur) var(--card-hover-box-shadow-2), 0 0 0 1px var(--card-hover-border-color);
   }
-  .card:hover .icon::after {
+  .ts-card:hover .icon::after {
     background-color: var(--card-hover-icon-background-color);
     border-color: var(--card-hover-icon-border-color);
   }
-  .card:hover .icon svg {
+  .ts-card:hover .icon svg {
     color: var(--card-hover-icon-color);
   }
-  .card:hover .shine {
+  .ts-card:hover .shine {
     opacity: 1;
     transition-duration: 0.5s;
     transition-delay: 0s;
   }
-  .card:hover .background .tiles {
+  .ts-card:hover .background .tiles {
     opacity: 1;
     transition-delay: 0.25s;
   }
-  .card:hover .background .tiles .tile {
+  .ts-card:hover .background .tiles .tile {
     -webkit-animation-name: tile;
             animation-name: tile;
   }
-  .card:hover .background .line {
+  .ts-card:hover .background .line {
     opacity: 1;
     transition-duration: 0.15s;
   }
-  .card:hover .background .line:before {
+  .ts-card:hover .background .line:before {
     transform: scaleX(1);
   }
-  .card:hover .background .line:after {
+  .ts-card:hover .background .line:after {
     transform: scaleY(1);
   }
-  .card:hover .background .line.line-1:before, .card:hover .background .line.line-1:after {
+  .ts-card:hover .background .line.line-1:before, .ts-card:hover .background .line.line-1:after {
     transition-delay: 0s;
   }
-  .card:hover .background .line.line-2:before, .card:hover .background .line.line-2:after {
+  .ts-card:hover .background .line.line-2:before, .ts-card:hover .background .line.line-2:after {
     transition-delay: 0.15s;
   }
-  .card:hover .background .line.line-3:before, .card:hover .background .line.line-3:after {
+  .ts-card:hover .background .line.line-3:before, .ts-card:hover .background .line.line-3:after {
     transition-delay: 0.3s;
   }
   
@@ -408,14 +417,15 @@
     opacity: var(--blur-opacity);
   }
 
-@media(max-width:1024px){
-    .sec3 .inner2 {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        margin: 1vw 0px 2vw -5vw;
+    @media(max-width:1024px){
+        .sec3 .inner2 {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            margin: 1vw 0px 2vw -5vw;
+        }
     }
-}
 
-@media (max-width:550px){
+    @media (max-width:550px){
+
     .inner h2{
         font-size: 5vw;
         padding: 0vw 0vw 1.5vw 0vw;

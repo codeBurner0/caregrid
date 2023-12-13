@@ -37,14 +37,14 @@ function SedSec() {
             <div className="card">
               <img src={bed} alt='bed'/>
               <h2>Bed Booking</h2>
-              <p>Allows patients or their caregivers to reserve hospital beds through the internet when hospital bed availability 
+              <p>Allows patients to reserve hospital beds through the internet when hospital bed availability 
               became a critical concern in many regions. </p>
               <button className='card_button'><span>Know this more</span></button>
             </div>
             <div className="card">
               <img src={customer} alt='customer'/>
               <h2>Customer Seggregation</h2>
-              <p>Different portals provided for hospital and Patient as well for better understanding and security </p>
+              <p>Different portals are established for hospitals and patients, ensuring a comprehensive and secure environment .</p>
               <button className='card_button'><span>Know this more</span></button>
             </div>
             <div className="card">
