@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { BsFillMenuButtonFill } from 'react-icons/bs';
 import { BsFillMenuButtonWideFill } from 'react-icons/bs';
 import Logo from '../assets/images/Caregrid_logo.png'
 import "../assets/styles/NavBar.css";
 function NavBar() {
+
+  let auth = localStorage.getItem('user');
+  auth = JSON.parse(auth)
+  useEffect(() => {
+    auth = localStorage.getItem('user');
+    auth = JSON.parse(auth)
+  }, [])
   const [bool, setBool] = useState(false);
+  const [authenticate, setAuthenticate] = useState(auth);
   function clicker() {
     setBool(!bool);
   }
   const navigate = useNavigate()
+  function logout(){
+    localStorage.clear();
+    setAuthenticate(false)
+  }
 
   return (
     <div>
@@ -47,9 +59,14 @@ function NavBar() {
               Schedule
             </Link>
           </li>
-          <li>
-            <button className='nav_login_button' onClick={()=>navigate('/login')}><span>Login</span></button>
-          </li>
+          {(!authenticate) ?
+            <li>
+              <button className='nav_login_button' onClick={() => navigate('/login')}><span>Login</span></button>
+            </li> :
+            <li>
+              <button className='nav_login_button' onClick={() => logout()}><span>Logout</span></button>
+            </li>
+          }
         </div>
       </div>
     </div>
