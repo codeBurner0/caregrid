@@ -56,6 +56,7 @@ a{
   -webkit-clip-path: polygon(0 0,100% 0, 100% 78%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
   border-radius: 8px;
+  opacity: 0.2;
 }
 /* .card-img img{
   width: 20vw;
@@ -94,8 +95,8 @@ a{
   font-family: 'Signika', sans-serif;
 
 }
-.drcard .card-btn{
-  padding: 0.5rem 2.5rem;
+.drcard .h-card-btn{
+  padding: 0.5rem .5rem;
   text-align: center;
   width: 13vw;
   background-color: #2a8478;
@@ -107,11 +108,11 @@ a{
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   margin-top: 0.4rem;
 }
-.drcard .card-btn:hover{
+.drcard .h-card-btn:hover{
   transform: translateY(2px);
   box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2);
 }
-.drcard .card-btn:active{
+.drcard .h-card-btn:active{
   transform: translateY(0);
   box-shadow: none;
 }
@@ -149,7 +150,6 @@ a{
     align-items: center;
   }
   .drcard{
-    
     margin: 2rem;
     transition: transform .5s;
   }

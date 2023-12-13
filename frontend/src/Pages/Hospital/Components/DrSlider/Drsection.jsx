@@ -7,7 +7,7 @@ const Drsection = () => {
   const data = [
     {
       id:1,
-      name:"Aman Rajput",
+      name:"Aman Sharma",
       specialist:"Cardio Surgen",
       about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci voluptas expedita distinctio non earum placeat magnam quos amet velit.",
       Contact:"+91 8395897592",
@@ -34,7 +34,7 @@ const Drsection = () => {
     },
     {
       id:4,
-      name:"Ankit Anand",
+      name:"Aarav Mittal",
       specialist:"Dentist",
       about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci voluptas expedita distinctio non earum placeat magnam quos amet velit.",
       Contact:"+91 8395897592",
@@ -62,7 +62,7 @@ const Drsection = () => {
                 <p className="about">
                   {profile.about}
                 </p>
-                <a href={profile.Contact} className='card-btn'>Contact</a>
+                <a href={profile.Contact} className='h-card-btn'>Contact</a>
               </div>
             )
           })}
