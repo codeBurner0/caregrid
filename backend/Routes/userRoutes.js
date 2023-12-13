@@ -1,11 +1,25 @@
 const express = require('express');
 const router = express();
 const bcrypt = require('bcryptjs');
+const nodemailer = require('nodemailer');
 require('../Database/connection/connectDb');
 const User = require('../Database/models/user');
 const cors = require('cors')
 router.use(express.json());
 router.use(cors())
+
+
+const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+        user: 'codeburner0@gmail.com',
+        pass: 'stdoftuycgumxcbj'
+    }
+});
+
+
+
+
 
 router.get('/', (req, res) => {
     res.send("Hello World")
@@ -28,6 +42,13 @@ router.post('/register', async (req, res) => {
             result = result.toObject();
             delete result.password
             if (result) {
+                const mailOPtions = {
+                    from: 'support@caregrid.in',
+                    to: req.body.email,
+                    subject: 'Request for Reset Password',
+                    html:'<div><h2>Thanks! for using CareGrid.</h2><h3>Registered Successfully!!</h3></div>',
+                }
+                const send_mail = await transporter.sendMail(mailOPtions)
                 res.status(201).send(result);
             } else {
                 res.json({ message: "validation failed" })
@@ -85,6 +106,42 @@ router.put('/update/:id', async (req, res) => {
         res.send(result)
     } catch (error) {
         res.json({ err: error.message })
+    }
+})
+
+//reset-password route
+router.put('/reset_password/:email', async (req, res) => {
+    const newPassword = req.body.newPassword
+    const confirmPassword = req.body.confirmPassword
+    const password = await bcrypt.hash(newPassword, 10)
+    if (newPassword === confirmPassword) {
+        if (newPassword && confirmPassword) {
+            try {
+                let result = await User.updateOne({
+                    email: req.params.email
+                }, {
+                    $set: {
+                        password: password,
+                    }
+                })
+                const mailOPtions = {
+                    from: 'support@caregrid.in',
+                    to: req.params.email,
+                    subject: 'Request for Reset Password',
+                    html:'<h3>Your Password Reset Successfully!</h3>',
+                }
+                const send_mail = await transporter.sendMail(mailOPtions)
+                res.status(201).json({ "message": "password reset Successfully!" });
+
+
+            } catch (error) {
+                res.status(404).json({ err: error.message });
+            }
+        } else {
+            res.status(404).json({ "message": "all fields are required!" });
+        }
+    } else {
+        res.status(404).json({ "message": "password are not matching" });
     }
 })
 
