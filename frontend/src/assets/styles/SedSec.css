@@ -57,6 +57,9 @@
     padding: 2.5vw 1vw;
     display: grid;
     /* height: 25vw; */
+    /* background-image: url('../images/sec2-card-design.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
     background-color: rgba(245, 245, 245, 0.599);
     justify-content: center;
     border-radius: 10px;

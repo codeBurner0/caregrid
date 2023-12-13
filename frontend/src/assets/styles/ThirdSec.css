@@ -97,13 +97,17 @@
     z-index: 1;
   }
 
+  .sec3 .inner .sec3-img {
+    height: 66vh;
+
+  }
   .sec3 .inner .sec3-img img{
-    width: 30vw;
-    /* height: 63vh; */
+    width: 30vw; 
+    height: 63vh;
     /* margin: 0px 0px -390px 0px ; */
-    position: relative;
-    top:2vw;
-    
+    /* position: relative;
+    top:2vw; */
+
   }
   
   .ts-card {

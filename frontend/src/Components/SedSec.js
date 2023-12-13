@@ -37,8 +37,7 @@ function SedSec() {
             <div className="card">
               <img src={bed} alt='bed'/>
               <h2>Bed Booking</h2>
-              <p>Allows patients to reserve hospital beds through the internet when hospital bed availability 
-              became a critical concern in many regions. </p>
+              <p>Enable online hospitall bed reservations to address critial bed shortages,ensuring timely access for patients. </p>
               <button className='card_button'><span>Know this more</span></button>
             </div>
             <div className="card">

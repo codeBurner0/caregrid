@@ -19,7 +19,8 @@
 
 }
 .sec3{
-    padding: 1vw;
+    padding: 1.5vw;
+
     background: #f2f9f96a ;
     background-image: url(../images/ThirdSec/img2.png);
     background-repeat: no-repeat;
@@ -29,7 +30,7 @@
 
 .sec3 .inner{
     display: grid;
-    grid-template-columns: 40vw 60vw;
+    grid-template-columns: 37vw 60vw;
 }
 
 .sec3 .sec3-img{
