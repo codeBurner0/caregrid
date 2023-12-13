@@ -115,7 +115,7 @@ router.put('/reset_password/:email', async (req, res) => {
     const confirmPassword = req.body.confirmPassword
     const password = await bcrypt.hash(newPassword, 10)
     if (newPassword === confirmPassword) {
-        if (newPassword && confirmPassword) {
+        if (newPassword || confirmPassword) {
             try {
                 let result = await User.updateOne({
                     email: req.params.email
@@ -141,7 +141,7 @@ router.put('/reset_password/:email', async (req, res) => {
             res.status(404).json({ "message": "all fields are required!" });
         }
     } else {
-        res.status(404).json({ "message": "password are not matching" });
+        res.status(404).json({ "message": "passwords are not matching" });
     }
 })
 

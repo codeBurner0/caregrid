@@ -41,7 +41,7 @@ async function sendEmail(email) {
     const mailOPtions = {
         from: 'codeburner0@gmail.com',
         to: email,
-        subject: 'Thanks For Signing in CareGrid',
+        subject: 'Request for change password',
         html: `<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
 
         <head>
@@ -254,7 +254,8 @@ async function sendEmail(email) {
         <v:textbox inset="0px,0px,0px,0px">
         <center style="color:#ffffff; font-family:Tahoma, sans-serif; font-size:15px">
         <![endif]-->
-                                                                            <div style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#1aa19c;border-radius:60px;width:auto;border-top:0px solid transparent;font-weight:undefined;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:5px;padding-bottom:5px;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:15px;text-align:center;mso-border-alt:none;word-break:keep-all;"><span style="padding-left:30px;padding-right:30px;font-size:15px;display:inline-block;letter-spacing:normal;"><span style="margin: 0; word-break: break-word; line-height: 30px;"><strong>Reset Password</strong></span></span></div><!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+                                                                            <div style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#1aa19c;border-radius:60px;width:auto;border-top:0px solid transparent;font-weight:undefined;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:5px;padding-bottom:5px;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:15px;text-align:center;mso-border-alt:none;word-break:keep-all;"><span style="padding-left:30px;padding-right:30px;font-size:15px;display:inline-block;letter-spacing:normal;"><span style="margin: 0; word-break: break-word; line-height: 30px;">
+                                                                            <strong><a href="http://localhost:3000/reset/${email}" style="text-decoration:none;">Reset Password</a></strong></span></span></div><!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
                                                                         </div>
                                                                     </td>
                                                                 </tr>

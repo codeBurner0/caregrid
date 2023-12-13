@@ -9,6 +9,7 @@ import NavBar from './Components/NavBar';
 import HomePage from './Components/TopSec';
 import HomeScreen from './Components/HomeScreen';
 import Hospital from './Pages/Hospital/Components/Hospital'
+import ResetPassword from './Components/ResetPassword';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
         <Routes>
               <Route  path ="/" exact element={<HomeScreen />} />
               <Route  path ="/login" exact element= {<><NavBar/><Login /></>} />
+              <Route  path ="/reset/:id" exact element= {<><NavBar/><ResetPassword /></>} />
               <Route  path ="/signup" exact element= {<><NavBar/><Signup /></>} />
               <Route  path ="/profile" element={<ProfileScreen />}/>
-              <Route  path ="/forgotpassword" element={<ForgotPassward />}/>
+              <Route  path ="/forgotpassword" element={<><NavBar/><ForgotPassward /></>}/>
               <Route path="/admin" element={<AdminScreen />}></Route>
               <Route path="/hospital" element={<Hospital />}></Route>
         </Routes>
