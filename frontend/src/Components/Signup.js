@@ -26,12 +26,7 @@ function Signup() {
     function inputChangerCust(){
         setHospRegInp(false)
     }
-    // useEffect(() => {
-    //     const auth = localStorage.getItem('user');
-    //     if (auth) {
-    //         navigate('/')
-    //     }
-    // }, [navigate])
+   
 
     async function Handle() {
         console.log(firstName, lastName, email,registration, password, confirmPassword)
@@ -48,7 +43,6 @@ function Signup() {
         result = await result.json()
         if (!result.message) {
             localStorage.setItem("user", JSON.stringify(result))
-            navigate(0)
             navigate('/')
             console.log(result)
         } else {
