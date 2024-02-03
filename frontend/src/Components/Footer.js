@@ -156,7 +156,7 @@ function Footer2() {
 
                     <div>
                         <i class="fa fa-map-marker"></i>
-                        <p><span>27, Om Nagar colony</span> Mathura, Uttar Pradesh</p>
+                        <p><span>GLA University</span> Mathura, Uttar Pradesh</p>
                     </div>
 
                     <div>

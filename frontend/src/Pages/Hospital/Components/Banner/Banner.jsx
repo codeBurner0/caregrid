@@ -21,11 +21,11 @@ const Banner = () => {
             <span>Experience a new era of healthcare accessibility.</span>
             <span>From scheduling appointments and accessing medical records to exploring a wide range of services.</span>
           </div>
-          <div style={{color:"black"}}>
+          {/* <div style={{color:"black"}}>
             <h3>✔ Comprehensive Healthcare Ecosystem</h3>
             <h3>✔ Patient-Centric Approach</h3>
             <h3>✔ Patient-Centric Approach</h3>
-          </div>
+          </div> */}
 
         </div>
         <div className="hbanner-right">

@@ -35,7 +35,7 @@ function NavBar() {
         </div>
         <div className={bool ? "show" : "list"}>
           <li>
-            <Link className="anchor" to="/home">
+            <Link className="anchor" to="/">
               Home
             </Link>
           </li>
