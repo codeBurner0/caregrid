@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { BsFillMenuButtonFill } from 'react-icons/bs';
 import { BsFillMenuButtonWideFill } from 'react-icons/bs';
-import Logo from '../assets/images/Caregrid_logo.png'
+import Logo from '../assets/images/CareGrid_logo.png';
 import "../assets/styles/NavBar.css";
 function NavBar() {
 
@@ -45,13 +45,13 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link className="anchor" to="/facility">
-              Facility
+            <Link className="anchor" to="/aboutus">
+              About us
             </Link>
           </li>
           <li>
-            <Link className="anchor" to="/createblog">
-              About
+            <Link className="anchor" to="/contactus">
+              Contact us
             </Link>
           </li>
           <li>
