@@ -11,6 +11,7 @@ import HomeScreen from './Components/HomeScreen';
 import Hospital from './Pages/Hospital/Components/Hospital'
 import ResetPassword from './Components/ResetPassword';
 import ContactUs from './Components/ContactUs';
+import AboutUs from './Components/AboutUs';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/admin" element={<AdminScreen />}></Route>
               <Route path="/hospital" element={<Hospital />}></Route>
               <Route path="/contactus" element={<ContactUs/>}></Route>
+              <Route path="/aboutus" element={<AboutUs/>}></Route>
         </Routes>
     </div>
   )
