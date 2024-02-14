@@ -1,7 +1,7 @@
 .signup-container {
     background: linear-gradient(to right, rgba(121, 232, 217, 0.372) 0%, rgba(157, 208, 202, 0.298) 71%, #25bfab 71%, #25bfab 100%);
-    width: 100vw;
     min-height: 100vh;
+    width: 100%;
     font-family: monospace;
     width: 98.6vw;
     overflow: auto;
@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 20px;
+    margin-top: 10px;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -203,12 +203,13 @@
     width: 30vw;
     transition: all 0.5s;
     cursor: pointer;
-    height: 1.8vw;
+    height: 3vw;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     font-family: 'Libre Baskerville', serif;
     font-weight: 200;
     margin-left: 0.9vw;
     margin-top: 1vw;
+    margin-bottom: 2vh;
 }
 
 .register-button span {
@@ -216,6 +217,23 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
+}
+.back-button{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #25bfab;
+    border: 0.8vw solid transparent;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1vw;
+    width: 6vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 3vw;
+    margin-left: 1vw;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 250;
 }
 
 .register-button span:after {

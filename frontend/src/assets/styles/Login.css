@@ -8,14 +8,29 @@
     width: 98.6vw;
     overflow: auto;
 }
-
+.lg-back-button{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #25bfab;
+    border: 0.8vw solid transparent;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1vw;
+    width: 6vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 3vw;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 250;
+}
 .login-pg {
 
     display: grid;
     width: 90vw;
     grid-template-columns: 1fr 1fr;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: hidden;

@@ -130,6 +130,7 @@ body{
     padding: 0.7rem 1.5rem;
     cursor: pointer;
     transition: all 0.4s ease;
+    margin-right: 5vw;
 }
 .send-btn:hover{
     opacity: 0.8;

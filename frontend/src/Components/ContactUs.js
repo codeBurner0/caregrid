@@ -6,9 +6,11 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMailOpenSharp } from "react-icons/io5";
 import { MdHomeWork } from "react-icons/md";
 import { BsFillClockFill } from "react-icons/bs";
+import { useNavigate} from 'react-router-dom';
 
 
 const ContactUs = () => {
+  const navigate = useNavigate();
   return (
     <section className="contact-section">
       <div className="contact-bg">
@@ -62,6 +64,7 @@ const ContactUs = () => {
             </div>
             <textarea rows="5" placeholder="Message" className="form-control" required></textarea>
             <input type="submit" className="send-btn" value="Send Message" />
+            <button className='back-button' onClick={() => navigate(-1)}>Go back</button>
           </form>
 
           <div>

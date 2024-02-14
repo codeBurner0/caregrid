@@ -63,12 +63,15 @@ function Signup() {
                     <div className="rg-pg-pt2">
                         <div className="container">
                             <h1 className='title'>Create Account</h1>
-                            <input type="text" className="register-login input1" placeholder='Firstname'
+                            <input type="text" className="register-login input1" placeholder='Name'
                                 onChange={(e) => setFirstName(e.target.value)} required />
-                            <input type="text" className="register-login input2" placeholder='Lastname'
-                                onChange={(e) => setLastName(e.target.value)} required />
-                            <input type={hospRegInp ? 'text' : 'hidden'} className="register-login input3" placeholder='Registration number'
-                                onChange={(e) => setRegistration(e.target.value)} required/>
+                            <>
+                            {
+                            hospRegInp ? <input type="text" className="register-login input2" placeholder='Registration num'
+                                onChange={(e) => setRegistration(e.target.value)} required/>:
+                                <input type="text" className="register-login input2" placeholder='Lastname' onChange={(e) => setLastName(e.target.value)} required />
+                            }
+                            </>
                             <input type="text" className="register-login input3" placeholder='Email Address'
                                 onChange={(e) => setEmail(e.target.value)} />
                             <input type="text" className="register-login input3" placeholder='Phone Number'
@@ -89,6 +92,7 @@ function Signup() {
                             <button className="register-button" onClick={() => Handle()}>
                                 <span> Create Account </span>
                             </button>
+                            <button className='back-button' onClick={() => navigate(-1)}>Go back</button>
                         </div>
                     </div>
                 </div>

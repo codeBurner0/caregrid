@@ -18,11 +18,11 @@ function App() {
     <div>
         <Routes>
               <Route  path ="/" exact element={<HomeScreen />} />
-              <Route  path ="/login" exact element= {<><NavBar/><Login /></>} />
-              <Route  path ="/reset/:id" exact element= {<><NavBar/><ResetPassword /></>} />
-              <Route  path ="/signup" exact element= {<><NavBar/><Signup /></>} />
+              <Route  path ="/login" exact element= {<><Login /></>} />
+              <Route  path ="/reset/:id" exact element= {<ResetPassword />} />
+              <Route  path ="/signup" exact element= {<Signup />}/>
               <Route  path ="/profile" element={<ProfileScreen />}/>
-              <Route  path ="/forgotpassword" element={<><NavBar/><ForgotPassward /></>}/>
+              <Route  path ="/forgotpassword" element={<><ForgotPassward /></>}/>
               <Route path="/admin" element={<AdminScreen />}></Route>
               <Route path="/hospital" element={<Hospital />}></Route>
               <Route path="/contactus" element={<ContactUs/>}></Route>

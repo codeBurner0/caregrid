@@ -56,6 +56,7 @@ function ForgotPassword() {
                             <button className="register-button" onClick={() => Handle()}>
                                 <span> Send Email </span>
                             </button>
+                            <button className='back-button' onClick={() => navigate(-1)}>Go back</button>
                         </div>:
                         <div className='fp_thanks'>Email sent Successfully!</div>}
                     </div>

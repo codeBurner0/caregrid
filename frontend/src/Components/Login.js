@@ -4,7 +4,7 @@ import '../assets/styles/Login.css'
 import { FaRegHospital } from 'react-icons/fa';
 import { FaUserTie } from 'react-icons/fa';
 // import { FaRegUser } from 'react-icons/fa';
-import { BiUserCircle } from 'react-icons/bi';
+import { BiAlignLeft, BiUserCircle } from 'react-icons/bi';
 import { PiEyeBold } from 'react-icons/pi';
 import DocImg from '../assets/images/DocLoginImg.png'
 import FloatImg1 from '../assets/images/img1.png'
@@ -111,6 +111,7 @@ function Login() {
                             <p>Not Registered Yet? <span className='signup-p' onClick={() => navigate('/signup')}> Sign-Up
                             </span></p>
                         </div>
+                        <button className='lg-back-button' onClick={() => navigate(-1)}>Go back</button>
                     </div>
                 </div>
             </div>
