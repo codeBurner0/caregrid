@@ -81,38 +81,38 @@ const AutoSlider = () => {
     {
       title: 'Dr. Aryan Kapoor',
       designation:'Your Trusted Medical Guide',
-      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+      image:'https://t4.ftcdn.net/jpg/03/20/52/31/360_F_320523164_tx7Rdd7I2XDTvvKfz2oRuRpKOPE5z0ni.jpg',
       description: "Dr. Kapoor's guidance on caregrid has been my anchor in the sea of health information. His personalized advice feels like having a reliable friend to turn to for all my health concerns.",
     },
     {
       title: 'Sanya Singh',
       designation:'User-Friendly Experience',
-      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+      image:'https://media.istockphoto.com/id/1278976856/photo/happy-student-girl-at-high-school.jpg?s=612x612&w=0&k=20&c=XiJQHTm-LKgCr0s3hURY0ATGFfMZQH4B8gE6h2TlK4U=',
       description: "Caregrid has been a lifesaver it ensures everything runs smoothly. Neha Sharma's customer care skills are unparalleled, making me feel heard and supported. It's more than a platform; it's a health ally that truly cares.",
     },
     {
       title: 'Rajat Verma',
       designation:'Freelancer',
-      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+      image:'https://t4.ftcdn.net/jpg/03/26/98/51/360_F_326985142_1aaKcEjMQW6ULp6oI9MYuv8lN9f8sFmj.jpg',
       description: 'A big shoutout to caregrid for streamlining my healthcare journey. From speedy appointments to accurate information, its a digital healthcare experience that truly prioritizes my well-being.',
     },
     {
       title: 'Manya Sharma',
       designation:'Freelancer',
-      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+      image:'https://wallpapers.com/images/hd/indian-girl-casual-photographer-camera-of1e2gv8qut3bn37.jpg',
       description: 'CareGrid streamlines healthcare coordination seamlessly, enhancing patient care through efficient communication and collaboration.',
     },
     {
       title: 'Reema Singh',
       designation:'Freelancer',
       description: 'CareGrid revolutionizes healthcare communication, fostering real-time collaboration and optimizing patient outcomes with its intuitive platform.',
-      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+      image:'https://www.clearvoice.com/wp-content/uploads/2023/01/Freelance-For-Us_Get-Hired-1.png',
     },
     {
       title: 'Karan Singh',
       designation:'Freelancer',
       description: 'CareGrid innovative platform offers a cohesive solution for healthcare teams, empowering seamless coordination and ensuring enhanced patient-centered care through streamlined communication.',
-      image:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg',
+      image:'https://media.istockphoto.com/id/1152207180/photo/young-handsome-male-20-years-old-in-eyeglasses-sitting-at-street-cafe-during-free-time-with.jpg?s=612x612&w=0&k=20&c=Z6LYH2TSppjK2waCS-YeUuILYF6raNmgD90lN8F8IUQ=',
     }
   ];
 
