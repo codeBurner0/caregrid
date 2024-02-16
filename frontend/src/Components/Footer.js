@@ -182,10 +182,10 @@ function Footer2() {
 
                     <div class="footer-icons">
 
-                        <a href="https://www.linkedin.com/in/ankit-anand-437187215/"><BsLinkedin className='icon1' /></a>
+                        <a href="https://www.linkedin.com/in/vidisha-singhal-57a389216/"><BsLinkedin className='icon1' /></a>
                         <a href="https://github.com/codeBurner0"><FaGithubSquare className='icon1' /></a>
-                        <a href="mailto:ankit.anand.fullstackdeveloper@gmail.com"><MdEmail className='icon1' /></a>
-                        <a href="#"><MdContacts className='icon1' onClick={()=>navigate('/contact')}/></a>
+                        <a href="mailto:manvisinghal285@gmail.com"><MdEmail className='icon1' /></a>
+                        <a href="#"><MdContacts className='icon1' onClick={()=>navigate('/contactus')}/></a>
                     </div>
 
                 </div>
