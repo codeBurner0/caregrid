@@ -34,7 +34,7 @@ export default function ThirdSec() {
       </svg>
     </span>
         <h2>24 Hours Open</h2>
-        <p>Ready to receive patients 24 hours a day</p>
+        <p style={{color: "#236952"}}>Ready to receive patients 24 hours a day</p>
     <div class="shine"></div>
     <div class="background">
       <div class="tiles">
@@ -81,7 +81,7 @@ export default function ThirdSec() {
       </svg>
     </span>
     <h2>Online System</h2>
-    <p>Our website already has a online ecosystem</p>
+    <p style={{color: "#236952"}}>Our website already has a online ecosystem</p>
     <div class="shine"></div>
     <div class="background">
       <div class="tiles">
@@ -128,7 +128,7 @@ export default function ThirdSec() {
       </svg>
     </span>
     <h2>Easy Access</h2>
-    <p>Easy access for allfacilities</p>
+    <p style={{color: "#236952"}}>Easy access for allfacilities</p>
     <div class="shine"></div>
     <div class="background">
       <div class="tiles">

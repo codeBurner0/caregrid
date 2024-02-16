@@ -104,6 +104,7 @@
   .sec3 .inner .sec3-img img{
     width: 30vw; 
     height: 63vh;
+    margin-top: 9.1vw;
     /* margin: 0px 0px -390px 0px ; */
     /* position: relative;
     top:2vw; */
@@ -113,7 +114,7 @@
   .ts-card {
     background-color: var(--background-color);
     box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
-    padding: 4.5vw 2vw 2vw 2vw ;
+    padding: 2vw 2vw 2vw 2vw ;
     border-radius: 15px;
     cursor: pointer;
     position: relative;
