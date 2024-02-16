@@ -75,6 +75,9 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.17) ;
     transition: 0.5s;
 }
+.sec2 .inner .card p{
+    color: #092d29;
+}
 .card_button{
     background-color: #25bfab;
     padding: 1vw 1.5vw;
