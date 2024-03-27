@@ -59,7 +59,7 @@ const Hospitalsection = () => {
           })}
         </div>
         <div className='h-find-more'>
-          <a href="https://caregrid-hospitals.vercel.app/" className='h-more-btn'>Find Out More</a>
+          <a href={`https://caregrid-hospitals.vercel.app/?data=${localStorage.getItem('user')}`} className='h-more-btn'>Find Out More</a>
         </div>
       </section>
     </div>

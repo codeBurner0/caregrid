@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://127.0.0.1:27017/caregrid",
+mongoose.connect("mongodb+srv://Vidisha:vidisha@cluster0.mgwgzxk.mongodb.net/hotel-rooms?retryWrites=true&w=majority&appName=Cluster0",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
