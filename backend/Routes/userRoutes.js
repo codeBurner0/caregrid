@@ -18,9 +18,6 @@ const transporter = nodemailer.createTransport({
 });
 
 
-
-
-
 router.get('/', (req, res) => {
     res.send("Hello World")
 })
@@ -49,6 +46,7 @@ router.post('/register', async (req, res) => {
                     html:'<div><h2>Thanks! for using CareGrid.</h2><h3>Registered Successfully!!</h3></div>',
                 }
                 const send_mail = await transporter.sendMail(mailOPtions)
+                console.log(send_mail);
                 res.status(201).send(result);
             } else {
                 res.json({ message: "validation failed" })

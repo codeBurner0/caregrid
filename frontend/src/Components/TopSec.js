@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/styles/TopSec.css'
 function TopSec() {
   const navigate = useNavigate();
+  const user = localStorage.getItem('user');
   return (
     <div className='topsec_container'>
       <section className="topsec_section">
@@ -21,7 +22,7 @@ function TopSec() {
             </p>
           </div>
           <div className="topsec_buttons_container">
-            <button className='button topsec_button1' onClick={() => navigate('/hospital')}><span>Patient</span></button>
+            <button className='button topsec_button1' onClick={user?()=>navigate('/hospital'): ()=>navigate('/login')}><span>Patient</span></button>
             <button className='topsec_button2'> <span>Hospital &nbsp; &#x00bb;</span></button>
           </div>
         </div>

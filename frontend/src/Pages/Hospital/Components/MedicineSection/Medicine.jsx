@@ -56,7 +56,7 @@ const Medicine = () => {
         </div>
 
         <div className='find-more'>
-        <a href="#" className='more-btn'>Find Out More</a>
+        <a href={`https://caregrid-medicines.vercel.app/?data=${localStorage.getItem('user')}`} className='more-btn'>Find Out More</a>
         </div>
       </section>
 

@@ -30,13 +30,13 @@
 }
 
 .logo:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     color: black;
 }
 
 .logo {
     display: inline-block;
-    transition: transform .6s;
+    /* transition: transform .6s; */
 }
 
 .nav_logo {
@@ -89,6 +89,7 @@
 .logo1 {
     text-decoration: none;
     color: #24766C;
+    padding-left: 8px;
 }
 
 .anchor {
@@ -110,12 +111,17 @@
 .nav_schedule {
     display: inline-block;
     text-decoration: none;
-    padding: 15px 2vw;
+    padding: 15px 0vw;
     color: #0d534b;
     transition: transform .3s;
     margin-left: 6vw;
     margin-right: 2vw;
-    text-decoration: underline;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 0px;
+    padding-right: 5px;
+
+    /* text-decoration: underline; */
     color: rgba(231, 251, 248, 0.906);
 }
 

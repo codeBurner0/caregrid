@@ -40,7 +40,9 @@ function Signup() {
             setErr(e);
             console.log("Error", e)
         })
-        result = await result.json()
+        console.log("hello"+result);
+        result = await result.json();
+        console.log("hello"+result);
         if (!result.message) {
             localStorage.setItem("user", JSON.stringify(result))
             navigate('/')

@@ -40,9 +40,15 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link className="anchor" to="/appointment">
+          {(authenticate)?
+            <Link className="anchor" to={`https://caregrid-doctor.vercel.app/?data=${localStorage.getItem('user')}`}>
               Appointment
             </Link>
+            :
+            <Link className="anchor" to="/login">
+              Appointment
+            </Link>
+          }
           </li>
           <li>
             <Link className="anchor" to="/aboutus">
@@ -55,9 +61,15 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link className="nav_schedule">
-              Schedule
+          {(authenticate)?
+            <Link className="nav_schedule" to="">
+            Hey {auth.firstName}&#128075;
             </Link>
+          :(
+            <Link className="nav_schedule" to="/signup">
+            SignUp
+            </Link>
+          )}
           </li>
           {(!authenticate) ?
             <li>
