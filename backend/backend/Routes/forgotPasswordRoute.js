@@ -1,48 +1,50 @@
-const express = require('express');
-const router=express();
-const nodemailer = require('nodemailer');
-require('../Database/connection/connectDb');
-const User = require('../Database/models/user');
-const cors = require('cors')
+const express = require("express");
+const dotenv = require("dotenv");
+const router = express();
+const nodemailer = require("nodemailer");
+require("../Database/connection/connectDb");
+const User = require("../Database/models/user");
+const cors = require("cors");
 router.use(express.json());
-router.use(cors())
+router.use(cors());
 
+dotenv.config();
 
 // forgot password route
-router.post('/forgot_password', async (req, res) => {
-    const email=req.body.email;
-    const authorize= await User.findOne({ email:email });
-    console.log(authorize)
-    if(authorize){
-        try {
-            sendEmail(email);
-            res.status(201).json({message:"email sent succesfully"})
-        } catch (error) {
-            console.log(error.message);
-            res.status(400).json({message:"email not sent successfully"})
-        }
-    }else{
-        res.status(400).json({message:"you are not authorize user!"})
+router.post("/forgot_password", async (req, res) => {
+  const email = req.body.email;
+  const authorize = await User.findOne({ email: email });
+  console.log(authorize);
+  if (authorize) {
+    try {
+      sendEmail(email);
+      res.status(201).json({ message: "email sent succesfully" });
+    } catch (error) {
+      console.log(error.message);
+      res.status(400).json({ message: "email not sent successfully" });
     }
-})
-
+  } else {
+    res.status(400).json({ message: "you are not authorize user!" });
+  }
+});
 
 // function to send email
 async function sendEmail(email) {
-    // email transporter
-    const transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: 'codeburner0@gmail.com',
-            pass: 'stdoftuycgumxcbj'
-        }
-    });
-    // congif email content
-    const mailOPtions = {
-        from: 'codeburner0@gmail.com',
-        to: email,
-        subject: 'Request for change password',
-        html: `<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+  // email transporter
+
+  const transporter = nodemailer.createTransport({
+    service: "Gmail",
+    auth: {
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASS,
+    },
+  });
+  // congif email content
+  const mailOPtions = {
+    from: process.env.MAIL_USER,
+    to: email,
+    subject: "Request for change password",
+    html: `<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
 
         <head>
             <title></title>
@@ -427,14 +429,14 @@ async function sendEmail(email) {
         </body>
         
         </html>`,
-    };
-    // send email
-    try {
-        const result = await transporter.sendMail(mailOPtions)
-        console.log("email sent successfully", result);
-    } catch (error) {
-        console.log("Email not sent: " + error.message)
-    }
+  };
+  // send email
+  try {
+    const result = await transporter.sendMail(mailOPtions);
+    console.log("email sent successfully", result);
+  } catch (error) {
+    console.log("Email not sent: " + error.message);
+  }
 }
 
 module.exports = router;
