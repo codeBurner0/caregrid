@@ -8,24 +8,24 @@ const Hospitalsection = () => {
   const data = [
     {
       id:1,
-      hname:"JP Hospital",
-      haddress:"Jaypee Hospital Rd, Goberdhanpur, Sector 128, Noida, Shahpur Govardhanpur Bangar, Uttar Pradesh 201304",
+      hname:"Relief Hospital",
+      haddress:"Relief Hospitals Trauma and Critical Care Near Naveen Galla Mandi Ahibaranpur, Lucknow - 226020",
       hphone:"+91-8524376000",
-      himage:"https://jaiprakashhospitals.com/wp-content/uploads/2019/11/7bd22da9-f68b-443c-abde-7fdfaa626e92.jpg",
+      himage:"https://www.joonsquare.com/usermanage/image/business/relief-hospital-trauma-and-critical-care-lucknow-2208/relief-hospital-trauma-and-critical-care-lucknow-2017-09-02-1-.jpg",
       url:"https://www.jaypeehealthcare.com/",
     },
     {
       id:2,
-      hname:"KD Hospital",
-      haddress:"K. D. Medical College Hospital And Research Center, 24 KM Milestone, Mathura - Delhi Road, NH 2,         Mathura,     Uttar Pradesh -     281406.",
+      hname:"Gopi Krishna Hospital",
+      haddress:"Gopi Krishna Hospital General Ganj Rd, opp. Government Inter College, General Ganj, Sadar Bazar, Mathura, Uttar Pradesh 281001",
       hphone:"+91-8524376023",
-      himage:"https://www.edufever.com/wp-content/uploads/2021/08/KD-Medical-College-Mathura-jpg-webp.webp",
+      himage:"https://www.joonsquare.com/usermanage/image/business/sarvodaya-hospital-and-research-centre-faridabad-917/sarvodaya-hospital-and-research-centre-faridabad-sarvo8.jpg",
       url:"https://www.kdmch.in/",
     },
     {
       id:3,
       hname:"Nayati Hospital",
-      haddress:"Hospital Address Nayati Multi Super Specialty Hospital Jai Singh Pura Bangar, Delhi - Agra Highway NH-2, Mathura - 281001",
+      haddress:"Nayati Medicity NH 19, Mathura Road, Goverdhan Bypass, Nayati Mor, Chhatikara, Uttar Pradesh 281001",
       hphone:"+91-8524376200",
       himage:"https://etimg.etb2bimg.com/thumb/msid-65330716,width-1200,height-900,resizemode-4/.jpg",
       ulr:"https://cimsmathura.com/",
@@ -40,9 +40,9 @@ const Hospitalsection = () => {
           <span className='h-text'>Hospitals</span>
         </h1>
         <div class="hcard">
-          {data.map((profile)=>{
+          {data.map((profile, id)=>{
             return(
-              <article className='harticle'>
+              <article key={id} className='harticle'>
                 <img src={profile.himage} alt="" className='h-img' style={{height:"240px"}}/>
                 <div className='htext'>
                   <h2 className='hname'>{profile.hname}</h2>
@@ -50,9 +50,9 @@ const Hospitalsection = () => {
                     {/* <img src={location} alt="" style={{height:"10", width:"10"}}/> */}
                     <i class="fa fa-map-marker locator" aria-hidden="true"></i>
                     &nbsp;&nbsp;&nbsp;{ profile.haddress}</p>
-                  <a href={profile.url}>
+                  {/* <a href={profile.url}>
                     <button className='hbtn'>Visit Us</button>
-                  </a>
+                  </a> */}
                 </div>
               </article>
             )
