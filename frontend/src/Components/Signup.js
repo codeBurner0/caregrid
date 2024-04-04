@@ -82,13 +82,13 @@ function Signup() {
                                 onChange={(e) => setPassword(e.target.value)} />
                             <input type="text" className="register-login input5" placeholder='Confirm Password'
                                 onChange={(e) => setConfirmPassword(e.target.value)} />
-                            <div className="lg-bt-u-h">
+                            {/* <div className="lg-bt-u-h">
                                 <span className='sp  sp-1'>
                                     <FaUserTie className='hov-icon' onClick={() => inputChangerCust()}/> User
                                 </span> 
                                 <span className='sp  sp-2'> <FaRegHospital className='hov-icon' onClick={ () =>inputChangerHosp() } /> Hospital
                                 </span>
-                            </div>
+                            </div> */}
                             <p className='para'>Already register? <span className='reg' onClick={() => navigate('/login')}>SignIn</span></p>
                             <p className='error'>{(err) ? err : null}</p>
                             <button className="register-button" onClick={() => Handle()}>

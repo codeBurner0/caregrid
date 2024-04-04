@@ -88,20 +88,14 @@ function Login() {
                             <PiEyeBold className='eye-icon' onClick={handleToggle} />
                             <input className='lg-input' type={type} name="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" />
                         </span>
-                        <div className="lg-bt-u-h">
+                        {/* <div className="lg-bt-u-h">
                             <span className='sp  sp-1' onClick={() => inputChangerCust()}>
-                                {/* {customer ? <FaUserTie className='hov-icon'
-                                    onClick={() => inputChangerCust()} /> :
-                                    <FaRegUser className='hov-icon' onClick={
-                                        () => inputChangerCust()} />}*/}
                                 <FaUserTie className='hov-icon'
                                 /> User</span>
                             <span className='sp  sp-2' onClick={() => inputChangerHosp()}>
-                                {/* {hosp ? <FaHospital className='hov-icon'
-                                    onClick={ () =>inputChangerHosp()} /> : */}
                                 <FaRegHospital className='hov-icon' /> Hospital</span>
                             <span className='sp-3' onClick={() => navigate('/forgotpassword')}>Forgot Password?</span>
-                        </div>
+                        </div> */}
 
                         <p className='err-field'>{err ? err : null}</p>
                         <button className="button" onClick={() => callLoginApi()}>

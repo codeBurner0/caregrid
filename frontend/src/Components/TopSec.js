@@ -23,7 +23,7 @@ function TopSec() {
           </div>
           <div className="topsec_buttons_container">
             <button className='button topsec_button1' onClick={user?()=>navigate('/hospital'): ()=>navigate('/login')}><span>Patient</span></button>
-            <button className='topsec_button2'> <span>Hospital &nbsp; &#x00bb;</span></button>
+            {/* <button className='topsec_button2'> <span>Hospital &nbsp; &#x00bb;</span></button> */}
           </div>
         </div>
         <div className="topsec_sec2">
