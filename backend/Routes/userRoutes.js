@@ -39,6 +39,10 @@ router.get("/user/:id", async (req, res) => {
 router.post("/register", async (req, res) => {
   if (req.body.password === req.body.confirmPassword) {
     try {
+      const emailcheck =  User.find({email : req.body.email});
+      if(emailcheck){
+        return res.json({ message: "Email Already Exist" });
+      }
       let result = new User(req.body);
       await result.save();
       result = result.toObject();
@@ -47,7 +51,7 @@ router.post("/register", async (req, res) => {
         const mailOPtions = {
           from: "support@caregrid.in",
           to: req.body.email,
-          subject: "Request for Reset Password",
+          subject: "Welcome to Caregrid",
           html: "<div><h2>Thanks! for using CareGrid.</h2><h3>Registered Successfully!!</h3></div>",
         };
         const send_mail = await transporter.sendMail(mailOPtions);

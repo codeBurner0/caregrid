@@ -206,17 +206,16 @@
 
 .sp-3 {
     display: inline-block;
-    padding-left: 5vw;
+    padding-left: 20vw;
     font-weight: 900;
     color: #2aa091;
     font-family: 'Libre Baskerville', serif;
     font-size: 1.3vw;
-    transition: transform .5s;
 }
 
 .sp-3:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 
 .err-field{

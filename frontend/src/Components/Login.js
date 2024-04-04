@@ -94,9 +94,12 @@ function Login() {
                                 /> User</span>
                             <span className='sp  sp-2' onClick={() => inputChangerHosp()}>
                                 <FaRegHospital className='hov-icon' /> Hospital</span>
-                            <span className='sp-3' onClick={() => navigate('/forgotpassword')}>Forgot Password?</span>
+                            
                         </div> */}
-
+                        <div className="lg-bt-u-h">
+                        <span className='sp-3' onClick={() => navigate('/forgotpassword')}>Forgot Password?</span>
+                        </div>
+                        
                         <p className='err-field'>{err ? err : null}</p>
                         <button className="button" onClick={() => callLoginApi()}>
                             <span> Login </span>

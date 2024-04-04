@@ -18,10 +18,15 @@ const userSchema=new mongoose.Schema({
         type:String,
         required:true,
         lowecase:true,
-        validate(value){
-            if(!validator.isEmail(value)){
-                throw new Error("email is not correct")
-            }
+        validate:{
+            validator:function(value){
+                const pass= /^[\w-\.]+@gmail.com$/;
+                const res = pass.test(value);
+                if(!res){
+                    throw new Error('Enter correct email address');
+                }
+                return res;
+            },
         },
         unique:true,
     },
@@ -29,7 +34,17 @@ const userSchema=new mongoose.Schema({
         type:Number,
         required:true,
         minlength:10,
-        maxlength:10
+        maxlength:10,
+        validate:{
+            validator:function(value){
+                const pass= /^[6-9]?[0-9]{9}$/;
+                const res = pass.test(value);
+                if(!res){
+                    throw new Error('Phone number should be of 10 length');
+                }
+                return res;
+            },
+        }
     },
     password:{
         type:String,

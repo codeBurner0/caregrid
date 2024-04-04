@@ -29,7 +29,7 @@ function ResetPassword() {
         })
         result = await result.json()
         if (result.message==="password reset Successfully!") {
-            navigate('/')
+            navigate('/login')
         }else if(result.message==="all fields are required!"){
             setErr("all fields are required!");
         }
@@ -58,7 +58,7 @@ function ResetPassword() {
                                 onChange={(e) => setNewPassword(e.target.value)} />
                             <input type="text" className="register-login input3 fp_input" placeholder='Enter your confirm password'
                                 onChange={(e) => setConfirmPassword(e.target.value)} />
-                            <p className='para'>Back to Home! <span className='reg' onClick={() => navigate('/')}>Home</span></p>
+                            {/* <p className='para'>Back to Home! <span className='reg' onClick={() => navigate('/')}>Home</span></p> */}
                             <p className='error'>{(err) ? err : null}</p>
                             <button className="register-button" onClick={() => Handle()}>
                                 <span> Submit </span>

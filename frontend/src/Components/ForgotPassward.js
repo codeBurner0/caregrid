@@ -27,7 +27,7 @@ function ForgotPassword() {
         })
         result = await result.json()
         if (result.message==="email sent succesfully") {
-            localStorage.setItem("user", JSON.stringify(result))
+            // localStorage.setItem("user", JSON.stringify(result))
             setActive(true)
             console.log(result)
         } else {
