@@ -8,6 +8,8 @@ const nodemailer = require("nodemailer");
 require("../Database/connection/connectDb");
 const User = require("../Database/models/user");
 const cors = require("cors");
+const Medicine = require("../Database/models/medicine");
+const medicine = require("../Database/models/medicine");
 router.use(express.json());
 router.use(cors());
 
@@ -39,12 +41,12 @@ router.get("/user/:id", async (req, res) => {
 router.post("/register", async (req, res) => {
   if (req.body.password === req.body.confirmPassword) {
     try {
-      const emailcheck =  User.find({email : req.body.email});
+      const emailcheck =  await User.findOne({email : req.body.email});
+      console.log(emailcheck)
       if(emailcheck){
         return res.json({ message: "Email Already Exist" });
       }
-      let result = new User(req.body);
-      await result.save();
+      let result =await User.create(req.body);
       result = result.toObject();
       delete result.password;
       if (result) {
@@ -154,5 +156,10 @@ router.put("/reset_password/:email", async (req, res) => {
     res.status(404).json({ message: "passwords are not matching" });
   }
 });
+
+router.get('/medicines',async (req,res)=>{
+  const medicine=await Medicine.find();
+  res.send(medicine)
+})
 
 module.exports = router;
